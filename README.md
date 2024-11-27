@@ -1,5 +1,17 @@
 # proyecto-mysql
 
+## AGROFINCA-NJ 👨‍🌾🐓🌱
+
+Este repositorio contiene el código fuente de una base de datos para una finca que se nos plantea en el proyecto
+
+## Tecnologías utilizados :
+
+ 100% SQL
+ 
+## Instrucciones de uso :
+
+1. copiar la respecta parte del código que desea ejecutar respetando el orden de los datos
+2. 
 ## BASE DE DATOS
 
 ```sql
