@@ -4138,3 +4138,7 @@ INSERT INTO Permisos (permiso_id, nombre, descripcion) VALUES
 
 ![image](https://github.com/user-attachments/assets/8785320d-c49a-4ff7-b013-cbb944a53b0c)
 
+## DESAROLLADO :
+
+Nilson Eduardo Carvajal Parada y jeisson Stiven Perez Gonzales
+
