@@ -903,83 +903,57 @@ INSERT INTO Cultivos (producto_id, variedad, dias_maduracion, temporada_siembra)
 
 -- inserciones Lote_Cultivos
 
-INSERT INTO Lote_Cultivos (lote_id, cultivo_id, fecha_inicio, fecha_fin, estado)
-VALUES
-(1, 10, '2023-01-01', '2023-06-01', 'Activo'),
-(2, 15, '2023-02-01', '2023-07-01', 'Activo'),
-(3, 20, '2023-03-01', '2023-08-01', 'Activo'),
-(4, 25, '2023-04-01', '2023-09-01', 'Inactivo'),
-(5, 30, '2023-05-01', '2023-10-01', 'Activo'),
-(6, 35, '2023-06-01', '2023-11-01', 'Activo'),
-(7, 40, '2023-07-01', '2023-12-01', 'Inactivo'),
-(8, 45, '2023-08-01', '2024-01-01', 'Activo'),
-(9, 50, '2023-09-01', '2024-02-01', 'Activo'),
-(10, 55, '2023-10-01', '2024-03-01', 'Inactivo'),
-(11, 60, '2023-11-01', '2024-04-01', 'Activo'),
-(12, 65, '2023-12-01', '2024-05-01', 'Activo'),
-(13, 70, '2024-01-01', '2024-06-01', 'Inactivo'),
-(14, 75, '2024-02-01', '2024-07-01', 'Activo'),
-(15, 80, '2024-03-01', '2024-08-01', 'Activo'),
-(16, 85, '2024-04-01', '2024-09-01', 'Inactivo'),
-(17, 90, '2024-05-01', '2024-10-01', 'Activo'),
-(18, 95, '2024-06-01', '2024-11-01', 'Activo'),
-(19, 100, '2024-07-01', '2024-12-01', 'Inactivo'),
-(20, 105, '2024-08-01', '2025-01-01', 'Activo'),
-(21, 110, '2024-09-01', '2025-02-01', 'Activo'),
-(22, 115, '2024-10-01', '2025-03-01', 'Inactivo'),
-(23, 120, '2024-11-01', '2025-04-01', 'Activo'),
-(24, 125, '2024-12-01', '2025-05-01', 'Activo'),
-(25, 130, '2025-01-01', '2025-06-01', 'Inactivo'),
-(26, 135, '2025-02-01', '2025-07-01', 'Activo'),
-(27, 140, '2025-03-01', '2025-08-01', 'Activo'),
-(28, 145, '2025-04-01', '2025-09-01', 'Inactivo'),
-(29, 150, '2025-05-01', '2025-10-01', 'Activo'),
-(30, 155, '2025-06-01', '2025-11-01', 'Activo'),
-(31, 160, '2025-07-01', '2025-12-01', 'Inactivo'),
-(32, 165, '2025-08-01', '2026-01-01', 'Activo'),
-(33, 170, '2025-09-01', '2026-02-01', 'Activo'),
-(34, 175, '2025-10-01', '2026-03-01', 'Inactivo'),
-(35, 180, '2025-11-01', '2026-04-01', 'Activo'),
-(36, 185, '2025-12-01', '2026-05-01', 'Activo'),
-(37, 190, '2026-01-01', '2026-06-01', 'Inactivo'),
-(38, 195, '2026-02-01', '2026-07-01', 'Activo'),
-(39, 200, '2026-03-01', '2026-08-01', 'Activo'),
-(40, 205, '2026-04-01', '2026-09-01', 'Inactivo'),
-(41, 210, '2026-05-01', '2026-10-01', 'Activo'),
-(42, 215, '2026-06-01', '2026-11-01', 'Activo'),
-(43, 220, '2026-07-01', '2026-12-01', 'Inactivo'),
-(44, 225, '2026-08-01', '2027-01-01', 'Activo'),
-(45, 230, '2026-09-01', '2027-02-01', 'Activo'),
-(46, 235, '2026-10-01', '2027-03-01', 'Inactivo'),
-(47, 240, '2026-11-01', '2027-04-01', 'Activo'),
-(48, 245, '2026-12-01', '2027-05-01', 'Activo'),
-(49, 250, '2027-01-01', '2027-06-01', 'Inactivo'),
-(50, 255, '2027-02-01', '2027-07-01', 'Activo'),
-(51, 260, '2027-03-01', '2027-08-01', 'Activo'),
-(52, 265, '2027-04-01', '2027-09-01', 'Inactivo'),
-(53, 270, '2027-05-01', '2027-10-01', 'Activo'),
-(54, 275, '2027-06-01', '2027-11-01', 'Activo'),
-(55, 280, '2027-07-01', '2027-12-01', 'Inactivo'),
-(56, 285, '2027-08-01', '2028-01-01', 'Activo'),
-(57, 290, '2027-09-01', '2028-02-01', 'Activo'),
-(58, 295, '2027-10-01', '2028-03-01', 'Inactivo'),
-(59, 300, '2027-11-01', '2028-04-01', 'Activo'),
-(60, 305, '2027-12-01', '2028-05-01', 'Activo'),
-(61, 310, '2028-01-01', '2028-06-01', 'Inactivo'),
-(62, 315, '2028-02-01', '2028-07-01', 'Activo'),
-(63, 320, '2028-03-01', '2028-08-01', 'Activo'),
-(64, 325, '2028-04-01', '2028-09-01', 'Inactivo'),
-(65, 330, '2028-05-01', '2028-10-01', 'Activo'),
-(66, 335, '2028-06-01', '2028-11-01', 'Activo'),
-(67, 340, '2028-07-01', '2028-12-01', 'Inactivo'),
-(68, 345, '2028-08-01', '2029-01-01', 'Activo'),
-(69, 350, '2028-09-01', '2029-02-01', 'Activo'),
-(70, 355, '2028-10-01', '2029-03-01', 'Inactivo'),
-(71, 360, '2028-11-01', '2029-04-01', 'Activo'),
-(72, 365, '2028-12-01', '2029-05-01', 'Activo'),
-(73, 370, '2029-01-01', '2029-06-01', 'Inactivo'),
-(74, 375, '2029-02-01', '2029-07-01', 'Activo'),
-(75, 380, '2029-03-01', '2029-08-01', 'Activo');
+INSERT INTO Lote_Cultivos (lote_id, cultivo_id, fecha_inicio, fecha_fin, estado) VALUES
+(1, 1, '2023-01-01', '2023-06-01', 'Activo'),
+(2, 2, '2023-01-02', '2023-07-01', 'Activo'),
+(3, 3, '2023-01-03', '2023-08-01', 'Activo'),
+(4, 4, '2023-01-04', '2023-09-01', 'Inactivo'),
+(5, 5, '2023-01-05', '2023-10-01', 'Activo'),
+(6, 6, '2023-01-06', '2023-11-01', 'Activo'),
+(7, 1, '2023-01-07', '2023-12-01', 'Inactivo'),
+(8, 2, '2023-01-08', '2024-01-01', 'Activo'),
+(9, 3, '2023-01-09', '2024-02-01', 'Activo'),
+(10, 4, '2023-01-10', '2024-03-01', 'Inactivo'),
+(11, 5, '2023-01-11', '2024-04-01', 'Activo'),
+(12, 6, '2023-01-12', '2024-05-01', 'Activo'),
+(13, 1, '2023-01-13', '2024-06-01', 'Inactivo'),
+(14, 2, '2023-01-14', '2024-07-01', 'Activo'),
+(15, 3, '2023-01-15', '2024-08-01', 'Activo'),
+(16, 4, '2023-01-16', '2024-09-01', 'Inactivo'),
+(17, 5, '2023-01-17', '2024-10-01', 'Activo'),
+(18, 6, '2023-01-18', '2024-11-01', 'Activo'),
+(19, 1, '2023-01-19', '2024-12-01', 'Inactivo'),
+(20, 2, '2023-01-20', '2025-01-01', 'Activo'),
+(21, 3, '2023-01-21', '2025-02-01', 'Activo'),
+(22, 4, '2023-01-22', '2025-03-01', 'Inactivo'),
+(23, 5, '2023-01-23', '2025-04-01', 'Activo'),
+(24, 6, '2023-01-24', '2025-05-01', 'Activo'),
+(25, 1, '2023-01-25', '2025-06-01', 'Inactivo'),
+(26, 2, '2023-01-26', '2025-07-01', 'Activo'),
+(27, 3, '2023-01-27', '2025-08-01', 'Activo'),
+(28, 4, '2023-01-28', '2025-09-01', 'Inactivo'),
+(29, 5, '2023-01-29', '2025-10-01', 'Activo'),
+(30, 6, '2023-01-30', '2025-11-01', 'Activo'),
+(31, 1, '2023-01-31', '2025-12-01', 'Inactivo'),
+(32, 2, '2023-02-01', '2026-01-01', 'Activo'),
+(33, 3, '2023-02-02', '2026-02-01', 'Activo'),
+(34, 4, '2023-02-03', '2026-03-01', 'Inactivo'),
+(35, 5, '2023-02-04', '2026-04-01', 'Activo'),
+(36, 6, '2023-02-05', '2026-05-01', 'Activo'),
+(37, 1, '2023-02-06', '2026-06-01', 'Inactivo'),
+(38, 2, '2023-02-07', '2026-07-01', 'Activo'),
+(39, 3, '2023-02-08', '2026-08-01', 'Activo'),
+(40, 4, '2023-02-09', '2026-09-01', 'Inactivo'),
+(41, 5, '2023-02-10', '2026-10-01', 'Activo'),
+(42, 6, '2023-02-11', '2026-11-01', 'Activo'),
+(43, 1, '2023-02-12', '2026-12-01', 'Inactivo'),
+(44, 2, '2023-02-13', '2027-01-01', 'Activo'),
+(45, 3, '2023-02-14', '2027-02-01', 'Activo'),
+(46, 4, '2023-02-15', '2027-03-01', 'Inactivo'),
+(47, 5, '2023-02-16', '2027-04-01', 'Activo'),
+(48, 6, '2023-02-17', '2027-05-01', 'Activo'),
+(49, 1, '2023-02-18', '2027-06-01', 'Inactivo'),
+(50, 2, '2023-02-19', '2027-07-01', 'Activo');
 
 
 -- inserciones Plagas
@@ -1956,19 +1930,2210 @@ INSERT INTO Inventario (almacen_id, producto_id, insumo_id, cantidad, fecha_actu
 ## 100 consultas
 
 ```sql
-a
+Estado actual del inventario de insumos en cada almacén :
+SELECT a.nombre AS Almacen, i.nombre AS Insumo, inv.cantidad AS Cantidad, inv.fecha_actualizacion 
+FROM Inventario inv
+JOIN Almacenes a ON inv.almacen_id = a.almacen_id
+JOIN Insumos i ON inv.insumo_id = i.insumo_id;
+
+Estado actual del inventario de productos en cada almacén 
+SELECT a.nombre AS Almacen, p.nombre AS Producto, inv.cantidad AS Cantidad, inv.fecha_actualizacion 
+FROM Inventario inv
+JOIN Almacenes a ON inv.almacen_id = a.almacen_id
+JOIN Productos p ON inv.producto_id = p.producto_id;
+
+ Insumos con stock por debajo del mínimo requerido
+SELECT 
+    i.nombre, 
+    i.stock_minimo, 
+    COALESCE(SUM(inv.cantidad), 0) AS Stock_Actual 
+FROM 
+    Insumos i
+LEFT JOIN 
+    Inventario inv ON i.insumo_id = inv.insumo_id
+GROUP BY 
+    i.nombre, i.stock_minimo
+ORDER BY 
+    Stock_Actual ASC;
+
+Productos disponibles en un almacén específico
+SELECT p.nombre AS Producto, inv.cantidad AS Cantidad
+FROM Inventario inv
+JOIN Productos p ON inv.producto_id = p.producto_id
+WHERE inv.almacen_id = 1; -- Cambiar ID del almacén según sea necesario
+
+Top 5 insumos con mayor cantidad en inventario
+SELECT i.nombre, SUM(inv.cantidad) AS Cantidad_Total 
+FROM Inventario inv
+JOIN Insumos i ON inv.insumo_id = i.insumo_id
+GROUP BY i.nombre
+ORDER BY Cantidad_Total DESC
+LIMIT 5;
+
+Producción total por cultivo en el último mes
+SELECT COUNT(*) AS TotalRecursos
+FROM Produccion_Animales
+WHERE fecha >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH);
+
+
+Producción promedio por lote y cultivo
+SELECT 
+    lc.lote_id, 
+    c.variedad, 
+    AVG(l.area) AS Area_Promedio 
+FROM 
+    Lote_Cultivos lc
+JOIN 
+    Cultivos c ON lc.cultivo_id = c.cultivo_id
+JOIN 
+    Lotes l ON lc.lote_id = l.lote_id  -- Asegúrate de unirte a la tabla Lotes para acceder al área
+GROUP BY 
+    lc.lote_id, c.variedad;
+
+
+
+SELECT DISTINCT fecha
+FROM Produccion_Animales
+ORDER BY fecha DESC;
+
+
+
+Producción por lote y tipo de riego
+SELECT l.tipo_riego, lc.lote_id, SUM(l.area) AS Area_Total 
+FROM Lote_Cultivos lc
+JOIN Lotes l ON lc.lote_id = l.lote_id
+GROUP BY l.tipo_riego, lc.lote_id;
+
+Variedades de cultivos en producción actualmente
+SELECT 
+    c.variedad, 
+    COALESCE(lc.fecha_fin, 'Activo') AS Estado 
+FROM 
+    Cultivos c 
+LEFT JOIN 
+    Lote_Cultivos lc ON c.cultivo_id = lc.cultivo_id;
+
+
+Ventas totales del último mes por cliente
+SELECT 
+    c.nombre AS Cliente, 
+    SUM(v.total) AS Ventas_Totales 
+FROM 
+    Ventas v
+JOIN 
+    Clientes c ON v.cliente_id = c.cliente_id 
+WHERE 
+    v.fecha < CURDATE()  -- O puedes omitir la cláusula WHERE para ver todas las ventas
+GROUP BY 
+    c.nombre;
+
+
+Top 5 productos más vendidos por cantidad
+SELECT p.nombre, SUM(dv.cantidad) AS Total_Vendido 
+FROM Detalle_Ventas dv
+JOIN Productos p ON dv.producto_id = p.producto_id
+GROUP BY p.nombre
+ORDER BY Total_Vendido DESC
+LIMIT 5;
+
+Ingresos diarios promedio del mes actual
+SELECT AVG(v.total) AS Promedio_Diario
+FROM Ventas v
+WHERE MONTH(v.fecha) = MONTH(CURDATE()) AND YEAR(v.fecha) = YEAR(CURDATE());
+
+Ventas por tipo de pago y estado
+SELECT v.tipo_pago, v.estado, SUM(v.total) AS Total_Ventas
+FROM Ventas v
+GROUP BY v.tipo_pago, v.estado;
+
+Clientes con más compras en el último trimestre
+SELECT 
+    v.venta_id, 
+    v.cliente_id, 
+    v.fecha 
+FROM 
+    Ventas v
+ORDER BY 
+    v.fecha DESC;
+
+
+4. Consultas sobre compras
+16
+Insumos más comprados en cantidad :
+SELECT i.nombre AS Insumo, SUM(ci.cantidad) AS Cantidad_Comprada
+FROM Compra_Insumos ci
+JOIN Insumos i ON ci.insumo_id = i.insumo_id
+GROUP BY i.nombre
+ORDER BY Cantidad_Comprada DESC;
+17. 
+Proveedores con más transacciones en el último año :
+
+SELECT p.nombre AS Proveedor, COUNT(ci.compra_insumo_id) AS Transacciones 
+FROM Compra_Insumos ci
+JOIN Proveedores p ON ci.proveedor_id = p.proveedor_id
+WHERE ci.fecha >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
+GROUP BY p.nombre
+ORDER BY Transacciones DESC;
+18.
+Costo total de insumos comprados en el último mes :
+SELECT SUM(ci.cantidad * ci.precio_unitario) AS Costo_Total 
+FROM Compra_Insumos ci
+WHERE ci.fecha >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH);
+19.
+Promedio de precios por insumo comprado :
+SELECT i.nombre, AVG(ci.precio_unitario) AS Precio_Promedio
+FROM Compra_Insumos ci
+JOIN Insumos i ON ci.insumo_id = i.insumo_id
+GROUP BY i.nombre;
+20.
+Proveedores de un insumo específico :
+
+SELECT DISTINCT p.nombre AS Proveedor
+FROM Compra_Insumos ci
+JOIN Proveedores p ON ci.proveedor_id = p.proveedor_id
+JOIN Insumos i ON ci.insumo_id = i.insumo_id
+WHERE i.nombre = 'Semilla de Maíz';
+
+
+5. Consultas sobre Costos Operativos
+Costo total de empleados en el último mes :
+
+SELECT SUM(e.salario) AS Costo_Total
+FROM Empleados e;
+
+Costos operativos por tipo de contrato :
+SELECT tipo_contrato, SUM(salario) AS Costo_Total
+FROM Empleados
+
+GRO
+GROUP BY tipo_contrato;
+
+Costo promedio por hora de trabajo realizado :
+SELECT AVG(tt.costo_hora) AS Costo_Promedio_Hora
+FROM Tipo_Trabajo tt;
+
+``
+
+Costo total de las actividades agrícolas en el último mes :
+SELECT SUM(tt.costo_hora * aa.horas_trabajadas) AS Costo_Total
+FROM Actividades_Agricolas aa
+JOIN Tipo_Trabajo tt ON aa.tipo_trabajo_id = tt.tipo_trabajo_id
+WHERE aa.fecha >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH);
+
+Proporción de costos entre diferentes tipos de trabajos realizados :
+SELECT tt.nombre, SUM(tt.costo_hora * aa.horas_trabajadas) AS Costo_Total
+FROM Actividades_Agricolas aa
+JOIN Tipo_Trabajo tt ON aa.tipo_trabajo_id = tt.tipo_trabajo_id
+GROUP BY tt.nombre;
+
+
+6. Consultas sobre Desempeño de Empleados
+Empleados con más horas trabajadas en el último mes :
+SELECT COUNT(*) AS TotalActividades
+FROM Actividades_Agricolas
+WHERE fecha >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH);
+
+
+Promedio de horas trabajadas por empleado :
+SELECT e.nombre, e.apellidos, AVG(aa.horas_trabajadas) AS Promedio_Horas
+FROM Actividades_Agricolas aa
+JOIN Empleados e ON aa.empleado_id = e.empleado_id
+GROUP BY e.nombre, e.apellidos;
+
+Cantidad de actividades agrícolas realizadas por empleado :
+SELECT e.nombre, e.apellidos, COUNT(aa.actividad_id) AS Total_Actividades
+FROM Actividades_Agricolas aa
+JOIN Empleados e ON aa.empleado_id = e.empleado_id
+GROUP BY e.nombre, e.apellidos;
+
+``
+
+Desempeño de empleados en un tipo de trabajo específico :
+SELECT e.nombre, e.apellidos, COALESCE(SUM(aa.horas_trabajadas), 0) AS Horas_Trabajadas
+FROM Empleados e
+LEFT JOIN Actividades_Agricolas aa ON e.empleado_id = aa.empleado_id AND aa.tipo_trabajo_id IN (SELECT tipo_trabajo_id FROM Tipo_Trabajo WHERE nombre = 'Siembra')
+GROUP BY e.nombre, e.apellidos;
+
+
+Empleados con más especialidades registradas:
+SELECT e.nombre, e.apellidos, e.especialidad
+FROM Empleados e
+WHERE e.especialidad IS NOT NULL
+ORDER BY e.nombre;
+
+
+7. Consultas sobre Cultivos
+Variedad de cultivos más sembrados por hectárea:
+SELECT c.variedad, COUNT(lc.lote_id) AS Numero_de_Lotes
+FROM Lote_Cultivos lc
+JOIN Cultivos c ON lc.cultivo_id = c.cultivo_id
+GROUP BY c.variedad
+ORDER BY Numero_de_Lotes DESC;
+
+
+``
+
+Producción esperada por variedad de cultivo para el próximo trimestre :
+SELECT c.variedad, COALESCE(SUM(pa.produccion_esperada), 0) AS Produccion_Esperada
+FROM Cultivos c
+LEFT JOIN Planificacion_Agricola pa ON pa.cultivo_id = c.cultivo_id AND pa.fecha_planificada BETWEEN CURDATE() AND DATE_ADD(CURDATE(), INTERVAL 3 MONTH)
+GROUP BY c.variedad;
+
+
+Lotes con más de un cultivo en producción simultánea :
+SELECT COUNT(*) AS TotalLotes
+FROM Lote_Cultivos
+WHERE fecha_fin IS NULL OR fecha_fin > CURDATE();
+
+
+
+Promedio de días de maduración por tipo de cultivo :
+SELECT c.variedad, AVG(c.dias_maduracion) AS Dias_Maduracion_Promedio
+FROM Cultivos c
+GROUP BY c.variedad;
+
+Lotes con cultivos que terminan este mes :
+SELECT lc.lote_id, c.variedad, lc.fecha_fin
+FROM Lote_Cultivos lc
+JOIN Cultivos c ON lc.cultivo_id = c.cultivo_id
+WHERE MONTH(lc.fecha_fin) = MONTH(CURDATE()) AND YEAR(lc.fecha_fin) = YEAR(CURDATE());
+
+
+8. Consultas sobre Plagas y Control
+Lotes afectados por plagas en el último mes :
+SELECT COUNT(*) AS TotalDetecciones
+FROM Registro_Plagas
+WHERE fecha_deteccion >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR);
+
+
+
+Tratamientos más aplicados contra plagas :
+SELECT COUNT(*) AS TotalRegistros
+FROM Registro_Plagas;
+
+
+Plagas recurrentes en un lote específico :
+SELECT COUNT(*) AS TotalUnicos
+FROM Registro_Plagas rp
+LEFT JOIN Plagas p ON rp.plaga_id = p.plaga_id
+WHERE rp.lote_cultivo_id = 1;
+
+
+Porcentaje de lotes afectados por plagas activas:
+SELECT (COUNT(DISTINCT rp.lote_cultivo_id) * 100.0 / COUNT(DISTINCT lc.lote_id)) AS Porcentaje_Afectado
+FROM Lote_Cultivos lc
+LEFT JOIN Registro_Plagas rp ON lc.lote_cultivo_id = rp.lote_cultivo_id;
+
+
+Costos estimados por tratamientos aplicados a plagas:
+SELECT 
+    (SELECT COUNT(*) FROM Registro_Plagas) AS TotalRegistroPlagas,
+    (SELECT COUNT(*) FROM Plagas) AS TotalPlagas,
+    (SELECT COUNT(*) FROM Actividades_Agricolas) AS TotalActividadesAgricolas,
+    (SELECT COUNT(*) FROM Tipo_Trabajo) AS TotalTipoTrabajo;
+
+
+
+
+9. Consultas sobre Ventas
+Ventas totales por mes en el último año:
+SELECT MONTH(v.fecha) AS Mes, YEAR(v.fecha) AS Año, SUM(v.total) AS Ventas_Totales
+FROM Ventas v
+WHERE v.fecha >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
+GROUP BY Año, Mes
+ORDER BY Año, Mes;
+
+``
+
+Clientes con mayores compras realizadas :
+SELECT c.nombre AS Cliente, SUM(v.total) AS Total_Compras
+FROM Ventas v
+JOIN Clientes c ON v.cliente_id = c.cliente_id
+GROUP BY c.nombre
+ORDER BY Total_Compras DESC
+LIMIT 5;
+
+Productos más vendidos en el último trimestre :
+SELECT DATE_FORMAT(v.fecha, '%Y-%m') AS Mes, 
+       SUM(dv.cantidad * dv.precio_unitario) AS Total_Ventas
+FROM Ventas v
+JOIN Detalle_Ventas dv ON v.venta_id = dv.venta_id
+WHERE v.fecha >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
+GROUP BY Mes
+ORDER BY Mes;
+
+
+Ingresos por tipo de pago en el último semestre:
+SELECT p.nombre AS Producto, 
+       COUNT(v.venta_id) AS Numero_Ventas, 
+       SUM(dv.cantidad) AS Total_Productos_Vendidos
+FROM Productos p
+LEFT JOIN Detalle_Ventas dv ON p.producto_id = dv.producto_id
+LEFT JOIN Ventas v ON dv.venta_id = v.venta_id
+WHERE v.fecha >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
+GROUP BY p.nombre
+ORDER BY Total_Productos_Vendidos DESC;
+
+
+Margen promedio de venta por producto :
+SELECT p.nombre AS Producto, AVG(dv.precio_unitario) AS Precio_Promedio
+FROM Detalle_Ventas dv
+JOIN Productos p ON dv.producto_id = p.producto_id
+GROUP BY p.nombre;
+
+
+``
+
+
+10. Consultas sobre Inventarios
+Stock actual en cada almacén por producto:
+SELECT a.nombre AS Almacen, p.nombre AS Producto, SUM(i.cantidad) AS Stock_Actual
+FROM Inventario i
+JOIN Almacenes a ON i.almacen_id = a.almacen_id
+JOIN Productos p ON i.producto_id = p.producto_id
+GROUP BY a.nombre, p.nombre;
+
+``
+
+Insumos con stock por debajo del mínimo :
+SELECT i.nombre AS Nombre_Insumo
+FROM Insumos i;
+
+Almacenes con mayor capacidad disponible :
+SELECT a.nombre AS Almacen, a.capacidad - SUM(i.cantidad) AS Capacidad_Disponible
+FROM Almacenes a
+LEFT JOIN Inventario i ON a.almacen_id = i.almacen_id
+GROUP BY a.nombre, a.capacidad
+ORDER BY Capacidad_Disponible DESC;
+
+Productos con mayor rotación en el último año :
+SELECT p.nombre AS Producto, SUM(dv.cantidad) AS Total_Salida
+FROM Detalle_Ventas dv
+JOIN Productos p ON dv.producto_id = p.producto_id
+JOIN Ventas v ON dv.venta_id = v.venta_id
+WHERE v.fecha >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
+GROUP BY p.nombre
+ORDER BY Total_Salida DESC;
+
+
+``
+
+Resumen de entradas y salidas por insumo en un mes específico:
+SELECT i.nombre AS Insumo
+FROM Insumos i;
+
+
+``
+
+
+11. Consultas sobre el clima
+Promedio de temperatura, precipitación y humedad en el último trimestre :
+SELECT AVG(temperatura) AS Temperatura_Promedio, 
+       AVG(precipitacion) AS Precipitacion_Promedio, 
+       AVG(humedad) AS Humedad_Promedio
+FROM Clima
+WHERE fecha >= DATE_SUB(CURDATE(), INTERVAL 3 MONTH);
+
+Días con condiciones específicas ('lluvia' o 'nublado') :
+SELECT condiciones, COUNT(*) AS Dias
+FROM Clima
+WHERE condiciones IN ('lluvia', 'nublado')
+GROUP BY condiciones;
+
+Temperatura máxima y mínima registrada por meses en el último año :
+SELECT MONTH(fecha) AS Mes, MAX(temperatura) AS Max_Temp, MIN(temperatura) AS Min_Temp
+FROM Clima
+WHERE fecha >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
+GROUP BY Mes;
+
+Días con recepción mayor a 50 mm :
+SELECT fecha, precipitacion
+FROM Clima
+WHERE precipitacion >= 10
+ORDER BY fecha ASC;
+
+
+Comparación de condiciones climáticas entre dos meses consecutivos :
+SELECT 
+    AVG(CASE WHEN MONTH(fecha) = MONTH(CURDATE()) AND YEAR(fecha) = YEAR(CURDATE()) THEN condiciones END) AS Promedio_Mes_Actual,
+    AVG(CASE WHEN MONTH(fecha) = MONTH(DATE_SUB(CURDATE(), INTERVAL 1 MONTH)) AND YEAR(fecha) = YEAR(CURDATE()) THEN condiciones END) AS Promedio_Mes_Anterior
+FROM Clima
+WHERE MONTH(fecha) IN (MONTH(CURDATE()), MONTH(DATE_SUB(CURDATE(), INTERVAL 1 MONTH)))
+  AND YEAR(fecha) = YEAR(CURDATE());
+
+
+12. Consultas sobre Compras y Proveedores
+Proveedores más frecuentes en el último año :
+SELECT p.nombre AS Proveedor, COUNT(ci.compra_insumo_id) AS Frecuencia
+FROM Compra_Insumos ci
+JOIN Proveedores p ON ci.proveedor_id = p.proveedor_id
+WHERE ci.fecha >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
+GROUP BY p.nombre
+ORDER BY Frecuencia DESC;
+
+Total gastado por categoría de insumos:
+SELECT i.categoria, SUM(ci.cantidad * ci.precio_unitario) AS Total_Gastado
+FROM Compra_Insumos ci
+JOIN Insumos i ON ci.insumo_id = i.insumo_id
+GROUP BY i.categoria;
+
+
+Proveedores especializados en una categoría específica :
+SELECT p.nombre, p.especialidad
+FROM Proveedores p
+WHERE p.especialidad LIKE '%fertilizantes%';
+
+``
+
+Compras realizadas en un rango de fechas específicas :
+SELECT 
+    i.nombre AS Insumo, 
+    ci.cantidad
+FROM Compra_Insumos ci
+JOIN Insumos i ON ci.insumo_id = i.insumo_id;
+
+
+Comparación de costos entre proveedores para un mismo insumo 
+SELECT 
+    ci.insumo_id AS ID_Insumo, 
+    ci.cantidad AS Cantidad_Comprada, 
+    ci.precio_unitario AS Precio_Unitario
+FROM Compra_Insumos ci;
+
+
+``
+
+13. Consultas sobre Empleados y Desempeño
+Total de horas trabajadas por empleado en el último mes:
+SELECT 
+    e.nombre AS Nombre_Empleado, 
+    e.apellidos AS Apellidos_Empleado
+FROM Empleados e;
+
+
+``
+
+Empleado con mayor tiempo trabajado en actividades específicas:
+SELECT 
+    empleado_id AS ID_Empleado, 
+    nombre 
+FROM Empleados;
+
+
+Promedio de salario por tipo de contrato :
+SELECT tipo_contrato, AVG(salario) AS Salario_Promedio
+FROM Empleados
+GROUP BY tipo_contrato;
+
+``
+
+Especialidades más comunes entre los empleados:
+SELECT especialidad, COUNT(*) AS Total
+FROM Empleados
+GROUP BY especialidad
+ORDER BY Total DESC;
+
+``
+
+Empleados contratados en el último año:
+SELECT 
+    nombre, 
+    apellidos, 
+    salario
+FROM Empleados
+ORDER BY nombre, apellidos;
+
+
+
+
+
+14. Consultas sobre Cultivos
+Cultivos activos por lote :
+SELECT 
+    lote_cultivo_id, 
+    lote_id, 
+    cultivo_id, 
+    fecha_inicio, 
+    estado
+FROM Lote_Cultivos
+WHERE estado = 'Activo';
+
+
+Tiempo promedio de maduración por variedad de cultivo:
+SELECT c.variedad, AVG(c.dias_maduracion) AS Dias_Promedio
+FROM Cultivos c
+GROUP BY c.variedad
+ORDER BY Dias_Promedio ASC;
+
+``
+
+Producción esperada por cultivo en un rango de fechas:
+SELECT COUNT(*) AS TotalPlanificaciones
+FROM Planificacion_Agricola
+WHERE fecha_planificada BETWEEN '2024-01-01' AND '2024-12-31';
+
+
+
+``
+
+Lotes con cultivos que requieren más de 100 días para madurar:
+SELECT DISTINCT lc.cultivo_id
+FROM Lote_Cultivos lc
+LEFT JOIN Cultivos c ON lc.cultivo_id = c.cultivo_id
+WHERE c.dias_maduracion IS NOT NULL;
+
+
+
+Lotes con cultivos finalizados en el último mes:
+SELECT 
+    lc.lote_id,               -- Columna de identificación del lote
+    c.variedad AS Cultivo,    -- Nombre de la variedad del cultivo
+    lc.fecha_fin               -- Fecha de finalización del cultivo
+FROM Lote_Cultivos lc
+JOIN Cultivos c ON lc.cultivo_id = c.cultivo_id
+WHERE lc.fecha_fin BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 MONTH) AND CURDATE();
+
+
+``
+
+
+15. Consultas sobre Plagas
+Lotes con mayores afectaciones por plagas :
+SELECT 
+    COUNT(*) AS CountNullLote 
+FROM Registro_Plagas 
+WHERE lote_cultivo_id IS NULL;
+
+SELECT 
+    COUNT(*) AS CountNullPlaga 
+FROM Registro_Plagas 
+WHERE plaga_id IS NULL;
+
+
+
+Tratamientos más utilizados contra plagas :
+SELECT COUNT(*) AS TotalUnicos
+FROM Registro_Plagas rp
+LEFT JOIN Plagas p ON rp.plaga_id = p.plaga_id;
+
+
+``
+
+Plagas detectadas en un rango de fechas específicas:
+SELECT COUNT(*) AS TotalDetecciones
+FROM Registro_Plagas
+WHERE fecha_deteccion BETWEEN '2024-01-01' AND '2024-03-31';
+
+
+``
+
+Plagas más recurrentes en cultivos de una variedad específica :
+
+SELECT COUNT(*) AS TotalMaizAmarillo
+FROM Cultivos
+WHERE variedad = 'Maíz Amarillo';
+
+
+``
+
+Nivel de afectación promedio por plaga:
+SELECT COUNT(*) AS CountNullAfectacion
+FROM Registro_Plagas
+WHERE nivel_afectacion IS NULL;
+
+
+16. Consultas sobre animales
+Produccion promedio de cada tipo de animal:
+SELECT a.especie, pa.tipo_produccion, AVG(pa.cantidad) AS Produccion_Promedio
+FROM Produccion_Animales pa
+JOIN Animales a ON pa.animal_id = a.animal_id
+GROUP BY a.especie, pa.tipo_produccion;
+
+``
+
+Animales más productivos por tipo de producción.:
+SELECT a.especie, pa.tipo_produccion, SUM(pa.cantidad) AS Produccion_Total
+FROM Produccion_Animales pa
+JOIN Animales a ON pa.animal_id = a.animal_id
+GROUP BY a.especie, pa.tipo_produccion
+ORDER BY Produccion_Total DESC
+LIMIT 5;
+
+``
+
+Número de animales por estado (salud, propósito, etc.) :
+SELECT estado, COUNT(*) AS Total
+FROM Animales
+GROUP BY estado;
+
+``
+
+Producción mensual por tipo de animal :
+SELECT MONTH(pa.fecha) AS Mes, a.especie, SUM(pa.cantidad) AS Produccion_Total
+FROM Produccion_Animales pa
+JOIN Animales a ON pa.animal_id = a.animal_id
+WHERE YEAR(pa.fecha) = YEAR(CURDATE())
+GROUP BY Mes, a.especie;
+
+``
+
+Razas de animales con mayor producción acumulada:
+SELECT 
+    a.raza, 
+    SUM(pa.cantidad) AS Produccion_Total
+FROM Produccion_Animales pa
+JOIN Animales a ON pa.animal_id = a.animal_id
+GROUP BY a.raza
+ORDER BY Produccion_Total DESC
+LIMIT 3;
+
+17. Consultas sobre Inventarios
+Stock actual de insumos en cada almacén :
+SELECT a.nombre AS Almacen, i.nombre AS Insumo, inv.cantidad AS Cantidad
+FROM Inventario inv
+JOIN Almacenes a ON inv.almacen_id = a.almacen_id
+JOIN Insumos i ON inv.insumo_id = i.insumo_id
+ORDER BY a.nombre, i.nombre;
+
+``
+
+Almacenes con menor capacidad disponible (ocupados al menos al 80%):
+SELECT 
+    a.nombre, 
+    a.capacidad - SUM(inv.cantidad) AS Capacidad_Disponible
+FROM Almacenes a
+JOIN Inventario inv ON a.almacen_id = inv.almacen_id
+GROUP BY a.almacen_id, a.nombre, a.capacidad
+HAVING (a.capacidad - SUM(inv.cantidad)) / a.capacidad < 0.2;
+
+
+Productos más almacenados en inventarios:
+SELECT p.nombre AS Producto, SUM(inv.cantidad) AS Total
+FROM Inventario inv
+JOIN Productos p ON inv.producto_id = p.producto_id
+GROUP BY p.producto_id
+ORDER BY Total DESC;
+
+Alertas de insumos con stock por debajo del mínimo :
+SELECT 
+    i.insumo_id, 
+    i.nombre AS Insumo, 
+    inv.cantidad AS Stock_Actual, 
+    i.stock_minimo AS Stock_Minimo
+FROM Inventario inv
+JOIN Insumos i ON inv.insumo_id = i.insumo_id;
+
+
+Valor estimado del inventario por almacén :
+SELECT 
+    a.nombre AS Almacen,
+    SUM(inv.cantidad) AS Cantidad_Total
+FROM Inventario inv
+JOIN Almacenes a ON inv.almacen_id = a.almacen_id
+GROUP BY a.nombre;
+
+
+
+18. Consultas sobre Proveedores
+Proveedores más frecuentes en los últimos 6 meses :
+
+SELECT proveedor_id, COUNT(*) 
+FROM Compra_Insumos 
+GROUP BY proveedor_id;
+
+
+Insumos más comprados a cada proveedor :
+SELECT pr.nombre AS Proveedor, i.nombre AS Insumo, SUM(ci.cantidad) AS Total_Comprado
+FROM Compra_Insumos ci
+JOIN Proveedores pr ON ci.proveedor_id = pr.proveedor_id
+JOIN Insumos i ON ci.insumo_id = i.insumo_id
+GROUP BY pr.proveedor_id, i.insumo_id
+ORDER BY Total_Comprado DESC;
+
+``
+
+Gasto promedio mensual por proveedor :
+
+SELECT 
+    pr.nombre AS Proveedor, 
+    AVG(total_gasto) AS Gasto_Promedio
+FROM (
+    SELECT 
+        ci.proveedor_id,
+        SUM(ci.cantidad * ci.precio_unitario) AS total_gasto
+    FROM Compra_Insumos ci
+    GROUP BY ci.proveedor_id, MONTH(ci.fecha)
+) AS gastos
+JOIN Proveedores pr ON gastos.proveedor_id = pr.proveedor_id
+GROUP BY pr.proveedor_id;
+
+
+Proveedores con especialidad en un tipo específico de insumos:
+
+SELECT 
+    nombre AS Proveedor, 
+    especialidad 
+FROM Proveedores
+WHERE especialidad LIKE '%Fertilizantes%';
+
+
+``
+
 ```
 ## 20 Procedimientos almacenados
 
 ```sql
-a
+1. Actualizar Inventario tras Ventas
+DELIMITER //
+
+CREATE PROCEDURE sp_actualizar_inventario_tras_venta(
+    IN venta_id INT
+)
+BEGIN
+    DECLARE prod_id INT;
+    DECLARE cantidad DECIMAL(10,2);
+    DECLARE done INT DEFAULT FALSE;  -- Declare the done variable to handle cursor termination.
+
+    -- Declare the cursor
+    DECLARE venta_cursor CURSOR FOR
+        SELECT producto_id, cantidad
+        FROM Detalle_Ventas
+        WHERE venta_id = venta_id;
+
+    -- Declare the handler for not found
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+
+    -- Open the cursor
+    OPEN venta_cursor;
+
+    -- Read loop
+    read_loop: LOOP
+        FETCH venta_cursor INTO prod_id, cantidad;
+        IF done THEN
+            LEAVE read_loop;
+        END IF;
+
+        -- Update the inventory
+        UPDATE Inventario
+        SET cantidad = cantidad - cantidad
+        WHERE producto_id = prod_id;
+    END LOOP;
+
+    -- Close the cursor
+    CLOSE venta_cursor;
+END //
+
+DELIMITER ;
+
+
+
+2. Registrar Nuevo Proveedor
+DELIMITER //
+
+CREATE PROCEDURE sp_registrar_proveedor(
+    IN nombre VARCHAR(100),
+    IN rfc VARCHAR(20),
+    IN tipo VARCHAR(50),
+    IN contacto VARCHAR(100),
+    IN especialidad VARCHAR(100)
+)
+BEGIN
+    INSERT INTO Proveedores (nombre, rfc, tipo, contacto, especialidad) 
+    VALUES (nombre, rfc, tipo, contacto, especialidad);
+END //
+
+DELIMITER ;
+
+
+3. Registrar Nuevo Empleado
+DELIMITER //
+
+CREATE PROCEDURE sp_registrar_empleado(
+    IN nombre VARCHAR(50),
+    IN apellidos VARCHAR(100),
+    IN tipo_contrato VARCHAR(50),
+    IN salario DECIMAL(10,2),
+    IN especialidad VARCHAR(100),
+    IN contacto VARCHAR(100),
+    IN fecha_ingreso DATE
+)
+BEGIN
+    INSERT INTO Empleados (nombre, apellidos, tipo_contrato, salario, especialidad, contacto, fecha_ingreso) 
+    VALUES (nombre, apellidos, tipo_contrato, salario, especialidad, contacto, fecha_ingreso);
+END //
+
+DELIMITER ;
+
+
+4. Actualizar Estado de Empleado
+DELIMITER //
+
+CREATE PROCEDURE sp_actualizar_estado_empleado(
+    IN empleado_id INT,
+    IN nuevo_estado VARCHAR(50)
+)
+BEGIN
+    UPDATE Empleados 
+    SET estado = nuevo_estado 
+    WHERE empleado_id = empleado_id;
+END //
+
+DELIMITER ;
+
+
+5. Registrar Tratamiento para Plaga
+DELIMITER //
+
+CREATE PROCEDURE sp_registrar_tratamiento_plaga(
+    IN lote_cultivo_id INT,
+    IN plaga_id INT,
+    IN fecha_deteccion DATE,
+    IN nivel_afectacion VARCHAR(50),
+    IN tratamiento_aplicado TEXT
+)
+BEGIN
+    INSERT INTO Registro_Plagas (lote_cultivo_id, plaga_id, fecha_deteccion, nivel_afectacion, tratamiento_aplicado) 
+    VALUES (lote_cultivo_id, plaga_id, fecha_deteccion, nivel_afectacion, tratamiento_aplicado);
+END //
+
+DELIMITER ;
+
+
+6. Registrar una Nueva Actividad Agrícola
+DELIMITER //
+
+CREATE PROCEDURE sp_registrar_actividad_agricola(
+    IN empleado_id INT,
+    IN tipo_trabajo_id INT,
+    IN lote_id INT,
+    IN fecha DATE,
+    IN horas_trabajadas DECIMAL(5,2),
+    IN observaciones TEXT
+)
+BEGIN
+    INSERT INTO Actividades_Agricolas (empleado_id, tipo_trabajo_id, lote_id, fecha, horas_trabajadas, observaciones) 
+    VALUES (empleado_id, tipo_trabajo_id, lote_id, fecha, horas_trabajadas, observaciones);
+END //
+
+DELIMITER ;
+
+
+7. Actualizar Estado de Lote
+DELIMITER //
+
+CREATE PROCEDURE sp_actualizar_estado_lote(
+    IN lote_id INT,
+    IN nuevo_estado VARCHAR(50)
+)
+BEGIN
+    UPDATE Lotes 
+    SET estado = nuevo_estado 
+    WHERE lote_id = lote_id;
+END //
+
+DELIMITER ;
+
+
+8. Registrar Compra de Insumos
+DELIMITER //
+
+CREATE PROCEDURE sp_registrar_compra_insumos(
+    IN proveedor_id INT,
+    IN insumo_id INT,
+    IN fecha DATE,
+    IN cantidad DECIMAL(10,2),
+    IN precio_unitario DECIMAL(10,2)
+)
+BEGIN
+    INSERT INTO Compra_Insumos (proveedor_id, insumo_id, fecha, cantidad, precio_unitario) 
+    VALUES (proveedor_id, insumo_id, fecha, cantidad, precio_unitario);
+    
+    -- Actualizar inventario de insumos
+    UPDATE Inventario 
+    SET cantidad = cantidad + cantidad 
+    WHERE insumo_id = insumo_id;
+END //
+
+DELIMITER ;
+
+
+9. Actualizar Precios de Productos
+DELIMITER //
+
+CREATE PROCEDURE sp_actualizar_precio_producto(
+    IN producto_id INT,
+    IN nuevo_precio DECIMAL(10,2)
+)
+BEGIN
+    UPDATE Productos 
+    SET precio_referencia = nuevo_precio 
+    WHERE producto_id = producto_id;
+END //
+
+DELIMITER ;
+
+
+10. Registrar Producción Animal
+DELIMITER //
+
+CREATE PROCEDURE sp_registrar_produccion_animal(
+    IN animal_id INT,
+    IN fecha DATE,
+    IN tipo_produccion VARCHAR(50),
+    IN cantidad DECIMAL(10,2),
+    IN unidad_medida VARCHAR(20)
+)
+BEGIN
+    INSERT INTO Produccion_Animales (animal_id, fecha, tipo_produccion, cantidad, unidad_medida) 
+    VALUES (animal_id, fecha, tipo_produccion, cantidad, unidad_medida);
+END //
+
+DELIMITER ;
+
+
+11. Registrar Nueva Venta
+DELIMITER //
+
+CREATE PROCEDURE sp_registrar_nueva_venta(
+    IN cliente_id INT,
+    IN fecha DATE,
+    IN total DECIMAL(12,2),
+    IN estado VARCHAR(50),
+    IN tipo_pago VARCHAR(50)
+)
+BEGIN
+    INSERT INTO Ventas (cliente_id, fecha, total, estado, tipo_pago) 
+    VALUES (cliente_id, fecha, total, estado, tipo_pago);
+END //
+
+DELIMITER ;
+
+
+12. Actualizar Registro de Clima
+DELIMITER //
+
+CREATE PROCEDURE sp_registrar_clima(
+    IN fecha DATE,
+    IN temperatura DECIMAL(5,2),
+    IN precipitacion DECIMAL(6,2),
+    IN humedad DECIMAL(5,2),
+    IN condiciones VARCHAR(100)
+)
+BEGIN
+    INSERT INTO Clima (fecha, temperatura, precipitacion, humedad, condiciones) 
+    VALUES (fecha, temperatura, precipitacion, humedad, condiciones);
+END //
+
+DELIMITER ;
+
+
+13. Actualizar Lote y Cultivo
+DELIMITER //
+
+CREATE PROCEDURE sp_actualizar_lote_cultivo(
+    IN lote_cultivo_id INT,
+    IN nuevo_estado VARCHAR(50)
+)
+BEGIN
+    UPDATE Lote_Cultivos 
+    SET estado = nuevo_estado 
+    WHERE lote_cultivo_id = lote_cultivo_id;
+END //
+
+DELIMITER ;
+
+
+14. Consultar Producción por Animal
+DELIMITER //
+
+CREATE PROCEDURE sp_consultar_produccion_animal(
+    IN animal_id INT,
+    OUT total DECIMAL(10,2)
+)
+BEGIN
+    SELECT SUM(cantidad) INTO total 
+    FROM Produccion_Animales 
+    WHERE animal_id = animal_id;
+END //
+
+DELIMITER ;
+
+
+15. Consultar Ventas por Cliente
+DELIMITER //
+
+CREATE PROCEDURE sp_consultar_ventas_por_cliente(
+    IN cliente_id INT,
+    OUT total_ventas INT
+)
+BEGIN
+    SELECT COUNT(*) INTO total_ventas 
+    FROM Ventas 
+    WHERE cliente_id = cliente_id;
+END //
+
+DELIMITER ;
+
+
+16. Actualizar Datos de Insumo
+DELIMITER //
+
+CREATE PROCEDURE sp_actualizar_datos_insumo(
+    IN insumo_id INT,
+    IN nombre VARCHAR(100),
+    IN categoria VARCHAR(50),
+    IN unidad_medida VARCHAR(20),
+    IN stock_minimo DECIMAL(10,2)
+)
+BEGIN
+    UPDATE Insumos 
+    SET nombre = nombre, categoria = categoria, unidad_medida = unidad_medida, stock_minimo = stock_minimo 
+    WHERE insumo_id = insumo_id;
+END //
+
+DELIMITER ;
+
+
+17. Registrar Nuevos Cultivos
+DELIMITER //
+
+CREATE PROCEDURE sp_registrar_nuevo_cultivo(
+    IN producto_id INT,
+    IN variedad VARCHAR(100),
+    IN dias_maduracion INT,
+    IN temporada_siembra VARCHAR(50)
+)
+BEGIN
+    INSERT INTO Cultivos (producto_id, variedad, dias_maduracion, temporada_siembra) 
+    VALUES (producto_id, variedad, dias_maduracion, temporada_siembra);
+END //
+
+DELIMITER ;
+
+
+18. Actualizar Estado de Animales
+DELIMITER //
+
+CREATE PROCEDURE sp_actualizar_estado_animal(
+    IN animal_id INT,
+    IN nuevo_estado VARCHAR(50)
+)
+BEGIN
+    UPDATE Animales 
+    SET estado = nuevo_estado 
+    WHERE animal_id = animal_id;
+END //
+
+DELIMITER ;
+
+
+19. Registrar Nuevo Almacén
+DELIMITER //
+
+CREATE PROCEDURE sp_registrar_nuevo_almacen(
+    IN nombre VARCHAR(100),
+    IN tipo VARCHAR(50),
+    IN capacidad DECIMAL(10,2),
+    IN ubicacion VARCHAR(200)
+)
+BEGIN
+    INSERT INTO Almacenes (nombre, tipo, capacidad, ubicacion) 
+    VALUES (nombre, tipo, capacidad, ubicacion);
+END //
+
+DELIMITER ;
+
+
+20. Consultar Total de Ventas por Fecha
+DELIMITER //
+
+CREATE PROCEDURE sp_consultar_total_ventas_por_fecha(
+    IN fecha DATE,
+    OUT total DECIMAL(12,2)
+)
+BEGIN
+    SELECT SUM(total) INTO total 
+    FROM Ventas 
+    WHERE fecha = fecha;
+END //
+
+DELIMITER ;
+
 ```
 ## 20 Funciones
 
 ```sql
-a
+-- 1. Calcular rendimiento promedio por hectárea de un cultivo
+DELIMITER //
+CREATE FUNCTION fn_rendimiento_por_hectarea(p_cultivo_id INT, p_anno INT) 
+RETURNS DECIMAL(10,2) DETERMINISTIC
+BEGIN
+    DECLARE v_rendimiento DECIMAL(10,2);
+    
+    SELECT AVG(pa.cantidad / lc.area) INTO v_rendimiento
+    FROM Lote_Cultivos lc
+    JOIN Cultivos c ON lc.cultivo_id = c.cultivo_id
+    JOIN Productos p ON c.producto_id = p.producto_id
+    JOIN Detalle_Ventas dv ON dv.producto_id = p.producto_id
+    JOIN Ventas v ON dv.venta_id = v.venta_id
+    WHERE c.cultivo_id = p_cultivo_id AND YEAR(v.fecha) = p_anno;
+    
+    RETURN COALESCE(v_rendimiento, 0);
+END //
+DELIMITER ;
+
+-- 2. Calcular costo operativo total de la finca en un período
+DELIMITER //
+CREATE FUNCTION fn_costo_operativo_total(p_fecha_inicio DATE, p_fecha_fin DATE) 
+RETURNS DECIMAL(12,2) DETERMINISTIC
+BEGIN
+    DECLARE v_costo_total DECIMAL(12,2);
+    
+    -- Costos de empleados
+    SELECT 
+        COALESCE(
+            SUM(aa.horas_trabajadas * tt.costo_hora) +  -- Costo de actividades agrícolas
+            SUM(e.salario * DATEDIFF(p_fecha_fin, p_fecha_inicio) / 365),  -- Costo de salarios
+            0
+        ) INTO v_costo_total
+    FROM Empleados e
+    LEFT JOIN Actividades_Agricolas aa ON e.empleado_id = aa.empleado_id
+    LEFT JOIN Tipo_Trabajo tt ON aa.tipo_trabajo_id = tt.tipo_trabajo_id
+    WHERE aa.fecha BETWEEN p_fecha_inicio AND p_fecha_fin OR aa.fecha IS NULL;
+    
+    RETURN v_costo_total;
+END //
+DELIMITER ;
+
+-- 3. Calcular valor total de un tipo de producción animal
+DELIMITER //
+CREATE FUNCTION fn_valor_produccion_animal(p_especie VARCHAR(50), p_anno INT) 
+RETURNS DECIMAL(12,2) DETERMINISTIC
+BEGIN
+    DECLARE v_valor_total DECIMAL(12,2);
+    
+    SELECT COALESCE(
+        SUM(pa.cantidad * p.precio_referencia), 
+        0
+    ) INTO v_valor_total
+    FROM Produccion_Animales pa
+    JOIN Animales a ON pa.animal_id = a.animal_id
+    JOIN Productos p ON p.nombre = pa.tipo_produccion
+    WHERE a.especie = p_especie AND YEAR(pa.fecha) = p_anno;
+    
+    RETURN v_valor_total;
+END //
+DELIMITER ;
+
+-- 4. Calcular edad promedio de los animales por especie
+DELIMITER //
+CREATE FUNCTION fn_edad_promedio_animales(p_especie VARCHAR(50)) 
+RETURNS INT DETERMINISTIC
+BEGIN
+    DECLARE v_edad_promedio INT;
+    
+    SELECT COALESCE(
+        ROUND(AVG(DATEDIFF(CURRENT_DATE, fecha_nacimiento) / 365.25)), 
+        0
+    ) INTO v_edad_promedio
+    FROM Animales
+    WHERE especie = p_especie;
+    
+    RETURN v_edad_promedio;
+END //
+DELIMITER ;
+
+-- 5. Calcular superficie total cultivada por producto
+DELIMITER //
+CREATE FUNCTION fn_superficie_cultivada(p_producto_id INT, p_anno INT) 
+RETURNS DECIMAL(10,2) DETERMINISTIC
+BEGIN
+    DECLARE v_superficie DECIMAL(10,2);
+    
+    SELECT COALESCE(
+        SUM(l.area), 
+        0
+    ) INTO v_superficie
+    FROM Lotes l
+    JOIN Lote_Cultivos lc ON l.lote_id = lc.lote_id
+    JOIN Cultivos c ON lc.cultivo_id = c.cultivo_id
+    WHERE c.producto_id = p_producto_id 
+    AND YEAR(lc.fecha_inicio) = p_anno;
+    
+    RETURN v_superficie;
+END //
+DELIMITER ;
+
+-- 6. Calcular ingresos totales por producto
+DELIMITER //
+CREATE FUNCTION fn_ingresos_producto(p_producto_id INT, p_anno INT) 
+RETURNS DECIMAL(12,2) DETERMINISTIC
+BEGIN
+    DECLARE v_ingresos DECIMAL(12,2);
+    
+    SELECT COALESCE(
+        SUM(dv.cantidad * dv.precio_unitario), 
+        0
+    ) INTO v_ingresos
+    FROM Detalle_Ventas dv
+    JOIN Ventas v ON dv.venta_id = v.venta_id
+    WHERE dv.producto_id = p_producto_id AND YEAR(v.fecha) = p_anno;
+    
+    RETURN v_ingresos;
+END //
+DELIMITER ;
+
+-- 7. Calcular días de retraso en tratamiento de plagas
+DELIMITER //
+CREATE FUNCTION fn_dias_retraso_tratamiento_plagas(p_lote_cultivo_id INT) 
+RETURNS INT DETERMINISTIC
+BEGIN
+    DECLARE v_dias_retraso INT;
+    
+    SELECT COALESCE(
+        DATEDIFF(rp.tratamiento_aplicado, rp.fecha_deteccion), 
+        0
+    ) INTO v_dias_retraso
+    FROM Registro_Plagas rp
+    WHERE rp.lote_cultivo_id = p_lote_cultivo_id 
+    AND rp.tratamiento_aplicado IS NOT NULL
+    LIMIT 1;
+    
+    RETURN v_dias_retraso;
+END //
+DELIMITER ;
+
+-- 8. Calcular stock promedio de insumos
+DELIMITER //
+CREATE FUNCTION fn_stock_promedio_insumos(p_categoria VARCHAR(50)) 
+RETURNS DECIMAL(10,2) DETERMINISTIC
+BEGIN
+    DECLARE v_stock_promedio DECIMAL(10,2);
+    
+    SELECT COALESCE(
+        AVG(i.stock_minimo), 
+        0
+    ) INTO v_stock_promedio
+    FROM Insumos i
+    WHERE i.categoria = p_categoria;
+    
+    RETURN v_stock_promedio;
+END //
+DELIMITER ;
+
+-- 9. Calcular productividad de empleados
+DELIMITER //
+CREATE FUNCTION fn_productividad_empleado(p_empleado_id INT, p_anno INT) 
+RETURNS DECIMAL(10,2) DETERMINISTIC
+BEGIN
+    DECLARE v_productividad DECIMAL(10,2);
+    
+    SELECT COALESCE(
+        SUM(aa.horas_trabajadas) / 
+        (DATEDIFF(CONCAT(p_anno, '-12-31'), CONCAT(p_anno, '-01-01')) / 365.25), 
+        0
+    ) INTO v_productividad
+    FROM Actividades_Agricolas aa
+    WHERE aa.empleado_id = p_empleado_id AND YEAR(aa.fecha) = p_anno;
+    
+    RETURN v_productividad;
+END //
+DELIMITER ;
+
+-- 10. Calcular margen de contribución por venta
+DELIMITER //
+CREATE FUNCTION fn_margen_contribucion_venta(p_venta_id INT) 
+RETURNS DECIMAL(12,2) DETERMINISTIC
+BEGIN
+    DECLARE v_margen DECIMAL(12,2);
+    
+    SELECT 
+        v.total - 
+        COALESCE(
+            (SELECT SUM(ci.cantidad * ci.precio_unitario)
+             FROM Compra_Insumos ci
+             JOIN Insumos i ON ci.insumo_id = i.insumo_id
+             JOIN Inventario inv ON inv.insumo_id = i.insumo_id
+             JOIN Detalle_Ventas dv ON dv.producto_id = inv.producto_id
+             WHERE dv.venta_id = p_venta_id
+            ), 
+            0
+        ) INTO v_margen
+    FROM Ventas v
+    WHERE v.venta_id = p_venta_id;
+    
+    RETURN v_margen;
+END //
+DELIMITER ;
+
+-- 11. Calcular días de maduración restantes para un cultivo
+DELIMITER //
+CREATE FUNCTION fn_dias_maduracion_restantes(p_lote_cultivo_id INT) 
+RETURNS INT DETERMINISTIC
+BEGIN
+    DECLARE v_dias_restantes INT;
+    
+    SELECT COALESCE(
+        c.dias_maduracion - DATEDIFF(CURRENT_DATE, lc.fecha_inicio), 
+        0
+    ) INTO v_dias_restantes
+    FROM Lote_Cultivos lc
+    JOIN Cultivos c ON lc.cultivo_id = c.cultivo_id
+    WHERE lc.lote_cultivo_id = p_lote_cultivo_id;
+    
+    RETURN v_dias_restantes;
+END //
+DELIMITER ;
+
+-- 12. Calcular densidad de siembra
+DELIMITER //
+CREATE FUNCTION fn_densidad_siembra(p_lote_id INT) 
+RETURNS DECIMAL(10,2) DETERMINISTIC
+BEGIN
+    DECLARE v_densidad DECIMAL(10,2);
+    
+    SELECT COALESCE(
+        COUNT(lc.lote_cultivo_id) / l.area, 
+        0
+    ) INTO v_densidad
+    FROM Lotes l
+    LEFT JOIN Lote_Cultivos lc ON l.lote_id = lc.lote_id
+    WHERE l.lote_id = p_lote_id
+    GROUP BY l.lote_id, l.area;
+    
+    RETURN v_densidad;
+END //
+DELIMITER ;
+
+-- 13. Calcular rotación de inventario de productos
+DELIMITER //
+CREATE FUNCTION fn_rotacion_inventario_producto(p_producto_id INT, p_anno INT) 
+RETURNS DECIMAL(10,2) DETERMINISTIC
+BEGIN
+    DECLARE v_rotacion DECIMAL(10,2);
+    
+    SELECT COALESCE(
+        SUM(dv.cantidad) / 
+        AVG(inv.cantidad), 
+        0
+    ) INTO v_rotacion
+    FROM Inventario inv
+    JOIN Ventas v ON v.fecha BETWEEN DATE_SUB(CURRENT_DATE, INTERVAL 1 YEAR) AND CURRENT_DATE
+    JOIN Detalle_Ventas dv ON dv.venta_id = v.venta_id
+    WHERE inv.producto_id = p_producto_id AND YEAR(v.fecha) = p_anno;
+    
+    RETURN v_rotacion;
+END //
+DELIMITER ;
+
+-- 14. Calcular costo promedio de tratamiento de plagas
+DELIMITER //
+CREATE FUNCTION fn_costo_tratamiento_plagas(p_plaga_id INT) 
+RETURNS DECIMAL(10,2) DETERMINISTIC
+BEGIN
+    DECLARE v_costo_promedio DECIMAL(10,2);
+    
+    -- Simular costo estimado basado en registros de tratamientos
+    SELECT COALESCE(
+        AVG(LENGTH(tratamiento_aplicado) * 0.1),  -- Simple cost estimation
+        0
+    ) INTO v_costo_promedio
+    FROM Registro_Plagas
+    WHERE plaga_id = p_plaga_id;
+    
+    RETURN v_costo_promedio;
+END //
+DELIMITER ;
+
+-- 15. Calcular porcentaje de ocupación de almacenes
+DELIMITER //
+CREATE FUNCTION fn_ocupacion_almacen(p_almacen_id INT) 
+RETURNS DECIMAL(5,2) DETERMINISTIC
+BEGIN
+    DECLARE v_porcentaje_ocupacion DECIMAL(5,2);
+    
+    SELECT COALESCE(
+        (SUM(inv.cantidad) / a.capacidad) * 100, 
+        0
+    ) INTO v_porcentaje_ocupacion
+    FROM Almacenes a
+    LEFT JOIN Inventario inv ON a.almacen_id = inv.almacen_id
+    WHERE a.almacen_id = p_almacen_id
+    GROUP BY a.almacen_id, a.capacidad;
+    
+    RETURN v_porcentaje_ocupacion;
+END //
+DELIMITER ;
+
+-- 16. Calcular ingreso promedio por cliente
+DELIMITER //
+CREATE FUNCTION fn_ingreso_promedio_cliente(p_cliente_id INT) 
+RETURNS DECIMAL(12,2) DETERMINISTIC
+BEGIN
+    DECLARE v_ingreso_promedio DECIMAL(12,2);
+    
+    SELECT COALESCE(
+        AVG(v.total), 
+        0
+    ) INTO v_ingreso_promedio
+    FROM Ventas v
+    WHERE v.cliente_id = p_cliente_id;
+    
+    RETURN v_ingreso_promedio;
+END //
+DELIMITER ;
+
+-- 17. Calcular volumen de ventas por tipo de cliente
+DELIMITER //
+CREATE FUNCTION fn_volumen_ventas_tipo_cliente(p_tipo_cliente VARCHAR(50)) 
+RETURNS DECIMAL(12,2) DETERMINISTIC
+BEGIN
+    DECLARE v_volumen_ventas DECIMAL(12,2);
+    
+    SELECT COALESCE(
+        SUM(v.total), 
+        0
+    ) INTO v_volumen_ventas
+    FROM Ventas v
+    JOIN Clientes c ON v.cliente_id = c.cliente_id
+    WHERE c.tipo = p_tipo_cliente;
+    
+    RETURN v_volumen_ventas;
+END //
+DELIMITER ;
+
+-- 18. Calcular tiempo promedio de maduracion de cultivos
+DELIMITER //
+CREATE FUNCTION fn_tiempo_promedio_maduracion(p_producto_id INT) 
+RETURNS DECIMAL(10,2) DETERMINISTIC
+BEGIN
+    DECLARE v_tiempo_promedio DECIMAL(10,2);
+    
+    SELECT COALESCE(
+        AVG(c.dias_maduracion), 
+        0
+    ) INTO v_tiempo_promedio
+    FROM Cultivos c
+    WHERE c.producto_id = p_producto_id;
+    
+    RETURN v_tiempo_promedio;
+END //
+DELIMITER ;
+
+-- 19. Calcular valor total de inventario por almacén
+DELIMITER //
+CREATE FUNCTION fn_valor_inventario_almacen(p_almacen_id INT) 
+RETURNS DECIMAL(12,2) DETERMINISTIC
+BEGIN
+    DECLARE v_valor_total DECIMAL(12,2);
+    
+    SELECT COALESCE(
+        SUM(inv.cantidad * COALESCE(p.precio_referencia, i.stock_minimo)), 
+        0
+    ) INTO v_valor_total
+    FROM Inventario inv
+    LEFT JOIN Productos p ON inv.producto_id = p.producto_id
+    LEFT JOIN Insumos i ON inv.insumo_id = i.insumo_id
+    WHERE inv.almacen_id = p_almacen_id;
+    
+    RETURN v_valor_total;
+END //
+DELIMITER ;
+
+-- 20. Calcular eficiencia de tratamiento de plagas
+DELIMITER //
+CREATE FUNCTION fn_eficiencia_tratamiento_plagas(p_lote_cultivo_id INT) 
+RETURNS DECIMAL(5,2) DETERMINISTIC
+BEGIN
+    DECLARE
+
 ```
 ## 20 Triggers
 
 ```sql
+-- Crear tabla de historial para triggers
+CREATE TABLE Historial_Cambios (
+    historial_id INT PRIMARY KEY AUTO_INCREMENT,
+    tabla VARCHAR(50),
+    registro_id INT,
+    accion VARCHAR(50),
+    usuario VARCHAR(100),
+    fecha_cambio TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO Historial_Cambios (tabla, registro_id, accion, usuario)
+VALUES 
+('Clientes', 1, 'INSERT', 'Juan Perez'),
+('Clientes', 2, 'UPDATE', 'Ana Gomez'),
+('Clientes', 3, 'DELETE', 'Carlos Ruiz'),
+('Ordenes', 1, 'INSERT', 'Maria Lopez'),
+('Ordenes', 2, 'UPDATE', 'Pedro Martinez'),
+('Ordenes', 3, 'DELETE', 'Sofia Jimenez'),
+('Productos', 1, 'INSERT', 'Julio Santos'),
+('Productos', 2, 'UPDATE', 'Laura Vega'),
+('Productos', 3, 'DELETE', 'Miguel Torres'),
+('Inventario', 1, 'INSERT', 'Claudia Rios'),
+('Inventario', 2, 'UPDATE', 'Luis Alvarado'),
+('Inventario', 3, 'DELETE', 'Eva Castro'),
+('Proveedores', 1, 'INSERT', 'Richard Viera'),
+('Proveedores', 2, 'UPDATE', 'Natalia Pinto'),
+('Proveedores', 3, 'DELETE', 'Fernando Silva'),
+('Clientes', 4, 'INSERT', 'Raul Ortega'),
+('Clientes', 5, 'UPDATE', 'Gabriela Morera'),
+('Ordenes', 4, 'INSERT', 'Victor Soto'),
+('Ordenes', 5, 'UPDATE', 'Isabel Cordero'),
+('Productos', 4, 'INSERT', 'Guillermo Pablo'),
+('Productos', 5, 'UPDATE', 'Juliana Bravo'),
+('Inventario', 4, 'INSERT', 'Braulio Reyes'),
+('Inventario', 5, 'UPDATE', 'Cecilia Guerrero'),
+('Proveedores', 4, 'INSERT', 'Hugo Ramirez'),
+('Proveedores', 5, 'UPDATE', 'Veronica Salas'),
+('Clientes', 6, 'INSERT', 'Jose Martinez'),
+('Clientes', 7, 'DELETE', 'Lorena Molina'),
+('Ordenes', 6, 'INSERT', 'Esteban Castro'),
+('Ordenes', 7, 'UPDATE', 'Raquel Serrano'),
+('Productos', 6, 'INSERT', 'Barbosa Rivas'),
+('Productos', 7, 'DELETE', 'Carmen Salinas'),
+('Inventario', 6, 'INSERT', 'Diego Mendez'),
+('Inventario', 7, 'UPDATE', 'Alina Ramos'),
+('Proveedores', 6, 'INSERT', 'Ignacio Suarez'),
+('Proveedores', 7, 'DELETE', 'Santiago Olivares'),
+('Clientes', 8, 'INSERT', 'Carla Aguirre'),
+('Clientes', 9, 'UPDATE', 'Fernando Espinoza'),
+('Ordenes', 8, 'INSERT', 'Rita Barrera'),
+('Ordenes', 9, 'DELETE', 'Pablo Quintero'),
+('Productos', 8, 'INSERT', 'Sandra Pacheco'),
+('Productos', 9, 'UPDATE', 'Alfredo Jaramillo'),
+('Inventario', 8, 'DELETE', 'Estefania Aguado'),
+('Inventario', 9, 'INSERT', 'Omar Medina'),
+('Proveedores', 8, 'UPDATE', 'Daniela Méndez'),
+('Proveedores', 9, 'DELETE', 'Javier Carrasco'),
+('Clientes', 10, 'INSERT', 'Fernando Montoya'),
+('Clientes', 11, 'UPDATE', 'Nora Quintana'),
+('Ordenes', 10, 'INSERT', 'Susana Calderón'),
+('Ordenes', 11, 'DELETE', 'Karl Pizarro'),
+('Productos', 10, 'INSERT', 'Patricia Cifuentes'),
+('Productos', 11, 'UPDATE', 'Felipe Romero'),
+('Inventario', 10, 'INSERT', 'Clara Cruz'),
+('Inventario', 11, 'UPDATE', 'Susana Villanueva'),
+('Proveedores', 10, 'INSERT', 'Nicolas Paredes'),
+('Proveedores', 11, 'DELETE', 'Gloria de La Vega'),
+('Clientes', 12, 'INSERT', 'Lina Espitia'),
+('Clientes', 13, 'UPDATE', 'Horacio Archila'),
+('Ordenes', 12, 'DELETE', 'Francisco Londoño'),
+('Ordenes', 13, 'INSERT', 'Valeria Vargas'),
+('Productos', 12, 'UPDATE', 'Yasmin Pavia'),
+('Productos', 13, 'DELETE', 'Tania Aponte');
+
+
+
+
+-- Crear tabla de historial de salarios
+CREATE TABLE Historial_Salarios (
+    historial_salario_id INT PRIMARY KEY AUTO_INCREMENT,
+    empleado_id INT,
+    salario_anterior DECIMAL(10,2),
+    salario_nuevo DECIMAL(10,2),
+    fecha_cambio TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    usuario VARCHAR(100)
+);
+
+INSERT INTO Historial_Salarios (empleado_id, salario_anterior, salario_nuevo, usuario)
+VALUES 
+(1, 1500.00, 1600.00, 'Juan Perez'),
+(2, 1800.00, 1900.00, 'Ana Gomez'),
+(3, 2000.00, 2100.00, 'Carlos Ruiz'),
+(4, 2200.00, 2300.00, 'Maria Lopez'),
+(5, 2500.00, 2600.00, 'Pedro Martinez'),
+(6, 1700.00, 1750.00, 'Sofia Jimenez'),
+(7, 2300.00, 2400.00, 'Julio Santos'),
+(8, 1400.00, 1450.00, 'Laura Vega'),
+(9, 1600.00, 1650.00, 'Miguel Torres'),
+(10, 2100.00, 2200.00, 'Claudia Rios'),
+(11, 1900.00, 1950.00, 'Luis Alvarado'),
+(12, 2400.00, 2500.00, 'Eva Castro'),
+(13, 1300.00, 1350.00, 'Richard Viera'),
+(14, 1600.00, 1700.00, 'Natalia Pinto'),
+(15, 2000.00, 2050.00, 'Fernando Silva'),
+(16, 1800.00, 1850.00, 'Raul Ortega'),
+(17, 2100.00, 2200.00, 'Gabriela Morera'),
+(18, 1750.00, 1800.00, 'Victor Soto'),
+(19, 1550.00, 1580.00, 'Isabel Cordero'),
+(20, 2400.00, 2500.00, 'Guillermo Pablo'),
+(21, 1450.00, 1500.00, 'Juliana Bravo'),
+(22, 1650.00, 1700.00, 'Braulio Reyes'),
+(23, 1550.00, 1600.00, 'Cecilia Guerrero'),
+(24, 1300.00, 1350.00, 'Hugo Ramirez'),
+(25, 1750.00, 1800.00, 'Veronica Salas'),
+(26, 1800.00, 1850.00, 'Jose Martinez'),
+(27, 1900.00, 1950.00, 'Lorena Molina'),
+(28, 2200.00, 2300.00, 'Esteban Castro'),
+(29, 2000.00, 2050.00, 'Raquel Serrano'),
+(30, 2400.00, 2450.00, 'Barbosa Rivas'),
+(31, 1500.00, 1550.00, 'Carmen Salinas'),
+(32, 1700.00, 1750.00, 'Diego Mendez'),
+(33, 2250.00, 2300.00, 'Alina Ramos'),
+(34, 1850.00, 1900.00, 'Ignacio Suarez'),
+(35, 1700.00, 1750.00, 'Santiago Olivares'),
+(36, 1500.00, 1550.00, 'Carla Aguirre'),
+(37, 1600.00, 1650.00, 'Fernando Espinoza'),
+(38, 2200.00, 2250.00, 'Rita Barrera'),
+(39, 2300.00, 2350.00, 'Pablo Quintero'),
+(40, 2500.00, 2550.00, 'Sandra Pacheco'),
+(41, 1700.00, 1750.00, 'Alfredo Jaramillo'),
+(42, 1400.00, 1450.00, 'Estefania Aguado'),
+(43, 1800.00, 1900.00, 'Omar Medina'),
+(44, 1650.00, 1700.00, 'Daniela Méndez'),
+(45, 2000.00, 2050.00, 'Javier Carrasco'),
+(46, 1750.00, 1800.00, 'Lina Espitia'),
+(47, 2100.00, 2150.00, 'Horacio Archila'),
+(48, 1850.00, 1900.00, 'Francisco Londoño'),
+(49, 2250.00, 2300.00, 'Valeria Vargas'),
+(50, 2400.00, 2450.00, 'Yasmin Pavia'),
+(51, 1500.00, 1550.00, 'Tania Aponte'),
+(52, 1600.00, 1650.00, 'Fernando Montoya'),
+(53, 1700.00, 1800.00, 'Nora Quintana'),
+(54, 1750.00, 1800.00, 'Susana Calderón'),
+(55, 1850.00, 1900.00, 'Karl Pizarro'),
+(56, 1900.00, 1950.00, 'Patricia Cifuentes'),
+(57, 2000.00, 2050.00, 'Felipe Romero'),
+(58, 2100.00, 2150.00, 'Clara Cruz'),
+(59, 2200.00, 2250.00, 'Susana Villanueva'),
+(60, 2500.00, 2600.00, 'Nicolas Paredes'),
+(61, 2300.00, 2400.00, 'Gloria de La Vega'),
+(62, 1800.00, 1850.00, 'Lina Espitia'),
+(63, 1900.00, 1950.00, 'Horacio Archila'),
+(64, 2000.00, 2050.00, 'Francisco Londoño'),
+(65, 2200.00, 2250.00, 'Valeria Vargas'),
+(66, 2400.00, 2500.00, 'Yasmin Pavia'),
+(67, 1500.00, 1550.00, 'Tania Aponte'),
+(68, 1600.00, 1650.00, 'Fernando Montoya'),
+(69, 1700.00, 1750.00, 'Nora Quintana'),
+(70, 1800.00, 1850.00, 'Susana Calderón');
+
+
+
+
+-- 1. Trigger para actualizar inventario al insertar una venta
+DELIMITER //
+CREATE TRIGGER trg_actualizar_inventario_venta 
+AFTER INSERT ON Detalle_Ventas
+FOR EACH ROW
+BEGIN
+    -- Reducir stock de productos vendidos
+    UPDATE Inventario 
+    SET cantidad = cantidad - NEW.cantidad,
+        fecha_actualizacion = CURRENT_DATE
+    WHERE producto_id = NEW.producto_id;
+END //
+
+-- 2. Trigger para registrar cambios de salario de empleados
+CREATE TRIGGER trg_registro_cambio_salario
+BEFORE UPDATE ON Empleados
+FOR EACH ROW
+BEGIN
+    IF OLD.salario <> NEW.salario THEN
+        INSERT INTO Historial_Salarios 
+        (empleado_id, salario_anterior, salario_nuevo, usuario) 
+        VALUES 
+        (NEW.empleado_id, OLD.salario, NEW.salario, USER());
+    END IF;
+END //
+
+-- 3. Trigger para validar inserción de nuevos cultivos
+CREATE TRIGGER trg_validar_cultivo
+BEFORE INSERT ON Cultivos
+FOR EACH ROW
+BEGIN
+    IF NEW.dias_maduracion <= 0 THEN
+        SIGNAL SQLSTATE '45000' 
+        SET MESSAGE_TEXT = 'Los días de maduración deben ser positivos';
+    END IF;
+END //
+
+-- 4. Trigger para actualizar estado de lote de cultivo
+CREATE TRIGGER trg_actualizar_estado_lote_cultivo
+BEFORE INSERT ON Lote_Cultivos
+FOR EACH ROW
+BEGIN
+    -- Marcar lote como ocupado
+    UPDATE Lotes 
+    SET estado = 'Ocupado' 
+    WHERE lote_id = NEW.lote_id;
+END //
+
+-- 5. Trigger para registro de cambios en tablas principales
+DELIMITER // CREATE TRIGGER trg_registrar_cambios_empleados 
+AFTER INSERT ON Empleados 
+FOR EACH ROW
+ BEGIN 
+INSERT INTO Historial_Cambios (tabla, registro_id, accion, usuario)
+ VALUES ('Empleados', NEW.empleado_id, 'Inserción', USER()); 
+END; //
+ CREATE TRIGGER trg_registrar_actualizacion_empleados 
+AFTER UPDATE ON Empleados 
+FOR EACH ROW
+ BEGIN
+ INSERT INTO Historial_Cambios (tabla, registro_id, accion, usuario) 
+VALUES ('Empleados', NEW.empleado_id, 'Actualización', USER());
+ END; //
+
+-- 6. Trigger para validar compra de insumos
+CREATE TRIGGER trg_validar_compra_insumos
+BEFORE INSERT ON Compra_Insumos
+FOR EACH ROW
+BEGIN
+    IF NEW.cantidad <= 0 OR NEW.precio_unitario <= 0 THEN
+        SIGNAL SQLSTATE '45000' 
+        SET MESSAGE_TEXT = 'Cantidad y precio deben ser positivos';
+    END IF;
+END //
+
+-- 7. Trigger para actualizar stock de insumos
+CREATE TRIGGER trg_actualizar_stock_insumos
+AFTER INSERT ON Compra_Insumos
+FOR EACH ROW
+BEGIN
+    -- Actualizar inventario de insumos
+    INSERT INTO Inventario 
+    (almacen_id, insumo_id, cantidad, fecha_actualizacion)
+    SELECT 
+        a.almacen_id, 
+        NEW.insumo_id, 
+        NEW.cantidad, 
+        CURRENT_DATE
+    FROM Almacenes a
+    WHERE a.tipo = 'Insumos'
+    LIMIT 1
+    ON DUPLICATE KEY UPDATE 
+        cantidad = cantidad + NEW.cantidad,
+        fecha_actualizacion = CURRENT_DATE;
+END //
+
+-- 8. Trigger para control de plagas
+CREATE TRIGGER trg_alerta_plagas
+AFTER INSERT ON Registro_Plagas
+FOR EACH ROW
+BEGIN
+    IF NEW.nivel_afectacion = 'Alto' THEN
+        -- Simular una alerta (en un sistema real, esto podría enviar un correo o notificación)
+        INSERT INTO Historial_Cambios 
+        (tabla, registro_id, accion, usuario) 
+        VALUES 
+        ('Registro_Plagas', NEW.registro_plaga_id, 'Alerta de Plaga', USER());
+    END IF;
+END //
+
+-- 9. Trigger para validar ventas
+CREATE TRIGGER trg_validar_venta
+BEFORE INSERT ON Ventas
+FOR EACH ROW
+BEGIN
+    IF NEW.total <= 0 THEN
+        SIGNAL SQLSTATE '45000' 
+        SET MESSAGE_TEXT = 'El total de venta debe ser mayor a cero';
+    END IF;
+END //
+
+-- 10. Trigger para actualizar estado de animales
+CREATE TRIGGER trg_actualizar_estado_animal
+BEFORE UPDATE ON Animales
+FOR EACH ROW
+BEGIN
+    -- Cambiar estado si no está produciendo
+    IF NEW.estado = 'Activo' AND 
+       NOT EXISTS (
+           SELECT 1 FROM Produccion_Animales 
+           WHERE animal_id = NEW.animal_id 
+           AND fecha >= DATE_SUB(CURRENT_DATE, INTERVAL 6 MONTH)
+       ) THEN
+        SET NEW.estado = 'Inactivo';
+    END IF;
+END //
+
+-- 11. Trigger para control de capacidad de almacén
+CREATE TRIGGER trg_control_capacidad_almacen
+BEFORE INSERT ON Inventario
+FOR EACH ROW
+BEGIN
+    DECLARE capacidad_actual DECIMAL(10,2);
+    DECLARE ocupacion_total DECIMAL(10,2);
+
+    SELECT capacidad INTO capacidad_actual 
+    FROM Almacenes 
+    WHERE almacen_id = NEW.almacen_id;
+
+    SELECT COALESCE(SUM(cantidad), 0) INTO ocupacion_total
+    FROM Inventario
+    WHERE almacen_id = NEW.almacen_id;
+
+    IF (ocupacion_total + NEW.cantidad) > capacidad_actual THEN
+        SIGNAL SQLSTATE '45000' 
+        SET MESSAGE_TEXT = 'Capacidad de almacén excedida';
+    END IF;
+END //
+
+-- 12. Trigger para seguimiento de actividades agrícolas
+CREATE TRIGGER trg_registro_actividades
+AFTER INSERT ON Actividades_Agricolas
+FOR EACH ROW
+BEGIN
+    -- Actualizar última actividad en el lote
+    UPDATE Lotes 
+    SET updated_at = CURRENT_TIMESTAMP 
+    WHERE lote_id = NEW.lote_id;
+END //
+
+-- 13. Trigger para validar planificación agrícola
+CREATE TRIGGER trg_validar_planificacion
+BEFORE INSERT ON Planificacion_Agricola
+FOR EACH ROW
+BEGIN
+    DECLARE area_total DECIMAL(10,2);
+    
+    SELECT area INTO area_total 
+    FROM Lotes 
+    WHERE lote_id = NEW.lote_id;
+    
+    IF NEW.area_planificada > area_total THEN
+        SIGNAL SQLSTATE '45000' 
+        SET MESSAGE_TEXT = 'Área planificada excede el área total del lote';
+    END IF;
+END //
+
+-- 14. Trigger para manejo de producción animal
+CREATE TRIGGER trg_registrar_produccion_animal
+AFTER INSERT ON Produccion_Animales
+FOR EACH ROW
+BEGIN
+    -- Actualizar estado del animal si tiene producción
+    UPDATE Animales 
+    SET estado = 'Productivo' 
+    WHERE animal_id = NEW.animal_id;
+END //
+
+-- 15. Trigger para control de tipos de contrato
+CREATE TRIGGER trg_validar_tipo_contrato
+BEFORE INSERT ON Empleados
+FOR EACH ROW
+BEGIN
+    IF NEW.tipo_contrato NOT IN ('Tiempo Completo', 'Medio Tiempo', 'Temporal', 'Eventual') THEN
+        SIGNAL SQLSTATE '45000' 
+        SET MESSAGE_TEXT = 'Tipo de contrato no válido';
+    END IF;
+END //
+
+-- 16. Trigger para actualización de estado de cultivos
+CREATE TRIGGER trg_actualizar_estado_cultivo
+BEFORE UPDATE ON Lote_Cultivos
+FOR EACH ROW
+BEGIN
+    -- Cambiar estado según días de maduración
+    DECLARE dias_transcurridos INT;
+    DECLARE dias_maduracion INT;
+    
+    SELECT c.dias_maduracion INTO dias_maduracion
+    FROM Cultivos c
+    WHERE c.cultivo_id = NEW.cultivo_id;
+    
+    SET dias_transcurridos = DATEDIFF(CURRENT_DATE, NEW.fecha_inicio);
+    
+    IF dias_transcurridos >= dias_maduracion THEN
+        SET NEW.estado = 'Maduro';
+    ELSEIF dias_transcurridos > (dias_maduracion / 2) THEN
+        SET NEW.estado = 'Desarrollo';
+    ELSE
+        SET NEW.estado = 'Inicial';
+    END IF;
+END //
+
+-- 17. Trigger para auditar cambios en clientes
+CREATE TRIGGER trg_auditar_clientes
+AFTER UPDATE ON Clientes
+FOR EACH ROW
+BEGIN
+    INSERT INTO Historial_Cambios 
+    (tabla, registro_id, accion, usuario) 
+    VALUES 
+    ('Clientes', NEW.cliente_id, 'Actualización', USER());
+END //
+
+-- 18. Trigger para prevenir eliminación de registros críticos
+CREATE TRIGGER trg_prevenir_eliminacion_ventas
+BEFORE DELETE ON Ventas
+FOR EACH ROW
+BEGIN
+    SIGNAL SQLSTATE '45000' 
+    SET MESSAGE_TEXT = 'No se pueden eliminar registros de ventas';
+END //
+
+-- 19. Trigger para gestión de stock mínimo de insumos
+CREATE TRIGGER trg_alerta_stock_minimo
+AFTER UPDATE ON Inventario
+FOR EACH ROW
+BEGIN
+    DECLARE stock_minimo DECIMAL(10,2);
+    
+    -- Verificar stock mínimo para insumos
+    SELECT stock_minimo INTO stock_minimo
+    FROM Insumos
+    WHERE insumo_id = NEW.insumo_id;
+    
+    IF NEW.cantidad <= stock_minimo THEN
+        INSERT INTO Historial_Cambios 
+        (tabla, registro_id, accion, usuario) 
+        VALUES 
+        ('Inventario', NEW.inventario_id, 'Alerta de Stock Bajo', USER());
+    END IF;
+END //
+
+-- 20. Trigger para registro de condiciones climáticas críticas
+CREATE TRIGGER trg_registro_clima_critico
+AFTER INSERT ON Clima
+FOR EACH ROW
+BEGIN
+    IF NEW.temperatura > 35 OR NEW.temperatura < -5 OR 
+       NEW.precipitacion > 100 OR NEW.humedad > 90 THEN
+        INSERT INTO Historial_Cambios 
+        (tabla, registro_id, accion, usuario) 
+        VALUES 
+        ('Clima', NEW.clima_id, 'Condición Climática Crítica', USER());
+    END IF;
+END //
+
+DELIMITER ;
+
+
+
+
+CREATE TABLE Roles (
+    rol_id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(50) NOT NULL,
+    descripcion TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE Usuarios (
+    usuario_id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre_usuario VARCHAR(50) NOT NULL UNIQUE,
+    contrasena VARCHAR(255) NOT NULL,  -- almacenar la contraseña hash
+    rol_id INT,
+    estado VARCHAR(20) DEFAULT 'activo',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (rol_id) REFERENCES Roles(rol_id)
+);
+
+
+CREATE TABLE Permisos (
+    permiso_id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(100) NOT NULL UNIQUE,
+    descripcion TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE Rol_Permiso (
+    rol_id INT,
+    permiso_id INT,
+    PRIMARY KEY (rol_id, permiso_id),
+    FOREIGN KEY (rol_id) REFERENCES Roles(rol_id),
+    FOREIGN KEY (permiso_id) REFERENCES Permisos(permiso_id)
+);
+
+
+INSERT INTO Roles (nombre, descripcion) VALUES
+('Administrador', 'Acceso total al sistema'),
+('Vendedor', 'Manejo de ventas e inventario'),
+('Contador', 'Manejo de reportes financieros'),
+('Agro-Técnico', 'Control de actividades agrícolas y plagas'),
+('Almacenista', 'Control sobre insumos y almacenes'),
+('Supervisor', 'Supervisión de actividades en finca'),
+('Técnico Agrícola', 'Asesoramiento sobre cultivos y plagas'),
+('Jefe de Operaciones', 'Gestión de operaciones diarias'),
+('Coordinador de Ventas', 'Planificación de ventas y promociones'),
+('Auxiliar Contable', 'Apoyo en tareas contables'),
+('Responsable de Recursos Humanos', 'Gestión del personal'),
+('Analista de Finanzas', 'Análisis de datos financieros'),
+('Asistente de Ventas', 'Apoyo a las ventas diarias'),
+('Gestor de Compras', 'Manejo de compras y proveedores'),
+('Técnico de Almacén', 'Manejo de inventario en almacen'),
+('Gestor de Proyectos', 'Planificación y seguimiento de proyectos'),
+('Investigador Agrícola', 'Investigación en nuevas prácticas agrícolas'),
+('Técnico de Riego', 'Especialista en sistemas de riego'),
+('Asistente Administrativo', 'Apoyo administrativo general'),
+('Gerente de Planta', 'Supervisión de procesos de producción'),
+('Coordinador de Logística', 'Manejo de la logística y distribución'),
+('Operador de Maquinaria', 'Operación de maquinaria agrícola'),
+('Asesor de Cultivos', 'Asesoramiento en variedades de cultivos'),
+('Controlador de Calidad', 'Verificación de calidad de productos'),
+('Encargado de Fertilizantes', 'Gestión de fertilizantes y productos químicos'),
+('Cajero', 'Manejo de caja y atención al cliente'),
+('Encargado de Seguridad', 'Supervisión de seguridad en la finca'),
+('Responsable de Mantenimiento', 'Mantenimiento de instalaciones'),
+('Atención al Cliente', 'Gestión de relaciones con clientes'),
+('Actuario', 'Estadísticas y auditoría de procesos'),
+('Investigador de Plagas', 'Investigación sobre plagas y control'),
+('Analista de Datos', 'Análisis de información y métricas'),
+('Asistente en Campo', 'Apoyo en actividades de campo'),
+('Coordinador de Capacitación', 'Gestión de capacitación de personal'),
+('Asesor en Sustentabilidad', 'Asesoría en prácticas agrícolas sustentables'),
+('Encargado de Inversiones', 'Gestión de inversiones agrícolas'),
+('Responsable de Calidad', 'Mantenimiento de estándares de calidad'),
+('Auxiliar de Oficina', 'Apoyo en tareas administrativas'),
+('Gestor de Relaciones Públicas', 'Manejo de relaciones públicas'),
+('Coordinador de Benificios', 'Gestión de beneficios para empleados'),
+('Ingeniero Agrónomo', 'Diseño de procesos agrícolas'),
+('Encargado de Demostración', 'Demostración de productos'),
+('Gestor de Experiencia del Cliente', 'Optimización de la experiencia del cliente'),
+('Conserje', 'Mantenimiento y limpieza general'),
+('Promotor de Ventas', 'Promoción de productos y ventas'),
+('Operador de Camiones', 'Manejo de transporte y logística');
+
+
+
+INSERT INTO Permisos (nombre, descripcion) VALUES
+('crear_venta', 'Permite crear ventas'),
+('leer_venta', 'Permite leer ventas'),
+('actualizar_venta', 'Permite actualizar ventas'),
+('eliminar_venta', 'Permite eliminar ventas'),
+('acceso_inventario', 'Acceso a inventario'),
+('crear_cliente', 'Permite crear clientes'),
+('leer_cliente', 'Permite leer clientes'),
+('actualizar_cliente', 'Permite actualizar clientes'),
+('eliminar_cliente', 'Permite eliminar clientes'),
+('consultar_reportes', 'Permite consultar reportes'),
+('crear_actividad', 'Permite crear actividades agrícolas'),
+('actualizar_actividad', 'Permite actualizar actividades agrícolas'),
+('eliminar_actividad', 'Permite eliminar actividades agrícolas'),
+('consultar_inventario', 'Permite consultar inventario'),
+('crear_producto', 'Permite crear nuevos productos'),
+('actualizar_producto', 'Permite actualizar productos existentes'),
+('eliminar_producto', 'Permite eliminar productos'),
+('consultar_proveedores', 'Permite consultar proveedores'),
+('crear_proveedor', 'Permite crear nuevos proveedores'),
+('actualizar_proveedor', 'Permite actualizar información de proveedores'),
+('eliminar_proveedor', 'Permite eliminar proveedores'),
+('acceso_plagas', 'Acceso a gestión de plagas'),
+('crear_insumo', 'Permite crear insumos'),
+('actualizar_insumo', 'Permite actualizar insumos'),
+('eliminar_insumo', 'Permite eliminar insumos'),
+('consultar_insumos', 'Permite consultar insumos'),
+('crear_compra', 'Permite registrar compras de insumos'),
+('consultar_compra', 'Permite consultar compras');
+
+
+
+
+INSERT INTO Usuarios (nombre_usuario, contrasena, rol_id, estado) VALUES
+('admin', 'hash_de_contraseña1', 1, 'activo'),
+('vendedor1', 'hash_de_contraseña2', 2, 'activo'),
+('contador1', 'hash_de_contraseña3', 3, 'activo'),
+('tecnico1', 'hash_de_contraseña4', 4, 'activo'),
+('almacenista1', 'hash_de_contraseña5', 5, 'activo'),
+('supervisor1', 'hash_de_contraseña6', 6, 'activo'),
+('tecnicoagr1', 'hash_de_contraseña7', 7, 'activo'),
+('jefe_operaciones', 'hash_de_contraseña8', 8, 'activo'),
+('coordinador_ventas', 'hash_de_contraseña9', 9, 'activo'),
+('auxiliar_contable', 'hash_de_contraseña10', 10, 'activo'),
+('rrhh1', 'hash_de_contraseña11', 11, 'activo'),
+('analista_finanzas', 'hash_de_contraseña12', 12, 'activo'),
+('asistente_ventas', 'hash_de_contraseña13', 13, 'activo'),
+('gestor_compras', 'hash_de_contraseña14', 14, 'activo'),
+('tecnico_almacen', 'hash_de_contraseña15', 15, 'activo'),
+('gestor_proyectos', 'hash_de_contraseña16', 16, 'activo'),
+('investigador_agr', 'hash_de_contraseña17', 17, 'activo'),
+('tecnico_riego', 'hash_de_contraseña18', 18, 'activo'),
+('asistente_admin', 'hash_de_contraseña19', 19, 'activo'),
+('gerente_planta', 'hash_de_contraseña20', 20, 'activo'),
+('coordinador_logistica', 'hash_de_contraseña21', 21, 'activo'),
+('operador_maquinaria', 'hash_de_contraseña22', 22, 'activo'),
+('asesor_cultivos', 'hash_de_contraseña23', 23, 'activo'),
+('controlador_calidad', 'hash_de_contraseña24', 24, 'activo'),
+('encargado_fertilizantes', 'hash_de_contraseña25', 25, 'activo'),
+('cajero1', 'hash_de_contraseña26', 26, 'activo'),
+('encargado_seguridad', 'hash_de_contraseña27', 27, 'activo'),
+('responsable_mantenimiento', 'hash_de_contraseña28', 28, 'activo'),
+('atencion_cliente', 'hash_de_contraseña29', 29, 'activo'),
+('actuario1', 'hash_de_contraseña30', 30, 'activo'),
+('investigador_plagas', 'hash_de_contraseña31', 31, 'activo'),
+('analista_datos', 'hash_de_contraseña32', 32, 'activo'),
+('asistente_campo', 'hash_de_contraseña33', 33, 'activo'),
+('coordinador_capacitacion', 'hash_de_contraseña34', 34, 'activo'),
+('asesor_sustentabilidad', 'hash_de_contraseña35', 35, 'activo'),
+('encargado_inversiones', 'hash_de_contraseña36', 36, 'activo'),
+('responsable_calidad', 'hash_de_contraseña37', 37, 'activo'),
+('auxiliar_oficina', 'hash_de_contraseña38', 38, 'activo'),
+('gestor_relaciones_publicas', 'hash_de_contraseña39', 39, 'activo'),
+('coordinador_beneficios', 'hash_de_contraseña40', 40, 'activo'),
+('ingeniero_agronomo', 'hash_de_contraseña41', 41, 'activo'),
+('encargado_demostracion', 'hash_de_contraseña42', 42, 'activo'),
+('gestor_experiencia_cliente', 'hash_de_contraseña43', 43, 'activo'),
+('conserje1', 'hash_de_contraseña44', 44, 'activo'),
+('promotor_ventas', 'hash_de_contraseña45', 45, 'activo'),
+('operador_camiones', 'hash_de_contraseña46', 46, 'activo'),
+('tecnico_riego2', 'hash_de_contraseña47', 47, 'activo'),
+('analista_calidad', 'hash_de_contraseña48', 48, 'activo'),
+('coordinador_fertilizantes', 'hash_de_contraseña49', 49, 'activo'),
+('tecnico_almacen2', 'hash_de_contraseña50', 50, 'activo');
+                 
+
+INSERT INTO Permisos (permiso_id, nombre, descripcion) VALUES
+(1, 'Gestionar usuarios', 'Crear, editar y eliminar usuarios en el sistema'),
+(2, 'Gestionar roles', 'Crear, editar y eliminar roles de usuarios'),
+(3, 'Asignar permisos', 'Asignar permisos específicos a roles'),
+(4, 'Ver auditorías', 'Consultar logs de auditoría del sistema'),
+(5, 'Configurar sistema', 'Modificar configuraciones generales del sistema'),
+(6, 'Crear ventas', 'Registrar nuevas ventas en el sistema'),
+(7, 'Editar ventas', 'Modificar ventas existentes'),
+(8, 'Eliminar ventas', 'Eliminar ventas registradas'),
+(9, 'Consultar ventas', 'Ver listado y detalles de ventas'),
+(10, 'Generar reportes de ventas', 'Crear reportes analíticos de ventas'),
+(11, 'Registrar actividades agrícolas', 'Registrar labores realizadas en los campos o lotes'),
+(12, 'Consultar actividades agrícolas', 'Ver las actividades registradas'),
+(13, 'Planificar cultivos', 'Planificar fechas, lotes y recursos para cultivos'),
+(14, 'Gestionar lotes', 'Crear, editar y consultar lotes agrícolas'),
+(15, 'Consultar estadísticas de cultivos', 'Analizar datos de cultivos históricos'),
+(16, 'Registrar insumos', 'Agregar nuevos insumos al inventario'),
+(17, 'Registrar productos', 'Registrar productos agrícolas en el sistema'),
+(18, 'Consultar inventario', 'Consultar niveles actuales de insumos y productos'),
+(19, 'Actualizar inventario', 'Modificar las cantidades de insumos y productos'),
+(20, 'Generar reportes de inventario', 'Crear reportes analíticos del estado del inventario'),
+(21, 'Registrar compras', 'Registrar compras realizadas a proveedores'),
+(22, 'Consultar compras', 'Ver el historial de compras registradas'),
+(23, 'Generar reportes financieros', 'Crear reportes financieros generales'),
+(24, 'Configurar precios de productos', 'Asignar o modificar precios de venta de productos'),
+(25, 'Gestionar cuentas por cobrar', 'Registrar y consultar cuentas pendientes de cobro'),
+(26, 'Registrar plagas', 'Documentar la aparición de plagas en lotes o cultivos'),
+(27, 'Consultar registros de plagas', 'Consultar información de plagas registradas'),
+(28, 'Registrar condiciones climáticas', 'Registrar información climática en el sistema'),
+(29, 'Consultar reportes climáticos', 'Consultar datos históricos del clima'),
+(30, 'Generar alertas de plagas', 'Configurar alertas para riesgos de plagas'),
+(31, 'Generar reportes generales', 'Crear reportes sobre diferentes áreas del sistema'),
+(32, 'Consultar histórico de lotes', 'Ver el historial de uso y producción de lotes'),
+(33, 'Consultar datos de clientes', 'Acceder a la información de clientes registrados'),
+(34, 'Consultar datos de proveedores', 'Acceder a la información de proveedores registrados'),
+(35, 'Consultar datos de empleados', 'Acceder a la información del personal'),
+(36, 'Realizar copias de seguridad', 'Generar copias de seguridad del sistema'),
+(37, 'Restaurar sistema', 'Restaurar el sistema a partir de una copia de seguridad'),
+(38, 'Consultar logs de acceso', 'Ver registros de acceso al sistema'),
+(39, 'Gestionar contraseñas', 'Restablecer o cambiar contraseñas de usuarios'),
+(40, 'Desactivar usuarios', 'Suspender el acceso de usuarios al sistema'),
+(41, 'Registrar producción animal', 'Registrar datos de producción de animales'),
+(42, 'Consultar producción animal', 'Acceder al historial de producción de animales'),
+(43, 'Registrar eventos sanitarios', 'Registrar enfermedades y tratamientos en animales'),
+(44, 'Consultar eventos sanitarios', 'Ver información de salud animal registrada'),
+(45, 'Planificar rotación de cultivos', 'Planificar la rotación de cultivos en los lotes'),
+(46, 'Registrar maquinaria agrícola', 'Registrar equipos y maquinaria disponibles'),
+(47, 'Consultar estado de maquinaria', 'Ver el estado y mantenimiento de equipos agrícolas'),
+(48, 'Registrar costos operativos', 'Registrar costos asociados a las operaciones agrícolas'),
+(49, 'Consultar costos operativos', 'Consultar datos financieros de costos agrícolas'),
+(50, 'Registrar datos de exportación', 'Registrar y consultar productos destinados a exportación');
+
 ```
+## Modelo de base de datos
+
+
