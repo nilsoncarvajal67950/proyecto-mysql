@@ -2,7 +2,7 @@
 
 ## AGROFINCA-NJ 👨‍🌾🐓🌱
 
-Este repositorio contiene el código fuente de una base de datos para una finca que se nos plantea en el proyecto
+Este repositorio contiene el código fuente de una base de datos para una finca que se nos plantea en el proyecto.
 
 ## Tecnologías utilizados :
 
@@ -10,9 +10,9 @@ Este repositorio contiene el código fuente de una base de datos para una finca 
  
 ## Instrucciones de uso :
 
-1. copiar la respecta parte del código que desea ejecutar respetando el orden de los datos
-2. 
-## BASE DE DATOS
+1. copiar la respectiva parte del código que desea ejecutar respetando el orden de los datos
+
+## BASE DE DATOS :
 
 ```sql
 -- Crear la base de datos
@@ -292,7 +292,7 @@ CREATE TABLE Inventario (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 ```
-## Inserciones
+## Inserciones :
 
 ```sql
 -- inserciones Empleados
@@ -1927,7 +1927,7 @@ INSERT INTO Inventario (almacen_id, producto_id, insumo_id, cantidad, fecha_actu
 (5, NULL, 10, 130.00, '2023-10-15', NOW(), NOW());
 
 ```
-## 100 consultas
+## 100 consultas :
 
 ```sql
 Estado actual del inventario de insumos en cada almacén :
@@ -3060,7 +3060,7 @@ END //
 DELIMITER ;
 
 ```
-## 20 Funciones
+## 20 Funciones :
 
 ```sql
 -- 1. Calcular rendimiento promedio por hectárea de un cultivo
@@ -4136,4 +4136,5 @@ INSERT INTO Permisos (permiso_id, nombre, descripcion) VALUES
 ```
 ## Modelo de base de datos
 
+![image](https://github.com/user-attachments/assets/8785320d-c49a-4ff7-b013-cbb944a53b0c)
 
